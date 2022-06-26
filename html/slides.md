@@ -2,6 +2,9 @@
 class: 'text-center'
 theme: bricks
 layout: cover
+routerMode: hash
+record: build
+
 ---
 
 # HTML
@@ -34,6 +37,8 @@ layout: center
   - Některé elementy si vyhradí jenom potřebné místo pro obsah 
     - např. **span, i, img**
     - říkáme jim ***Inline***
+
+
 ---
 
 # Komentáře
@@ -48,7 +53,7 @@ layout: center
 
 <jsfiddle source="2bad2furious/drakLxeo" :langs="['html','result']"></jsfiddle>
 
---- 
+---
 
 # Textové tagy
 

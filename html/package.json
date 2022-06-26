@@ -11,6 +11,7 @@
     "@slidev/theme-bricks": "^0.0.2",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
+    "@stackblitz/sdk": "^1.8.0",
     "slidev-theme-academic": "^1.1.0"
   }
 }

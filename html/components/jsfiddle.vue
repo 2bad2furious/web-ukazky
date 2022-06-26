@@ -20,5 +20,6 @@ const props = defineProps({
   <iframe width="100%" height="300"
           v-bind:src="'https://jsfiddle.net/' + source + '/embedded/' + (langs?.join(',') ?? '')"
           allowpaymentrequest allowfullscreen="allowfullscreen" ref="frame">
+    <script>console.log("howdy")</script>
   </iframe>
 </template>
