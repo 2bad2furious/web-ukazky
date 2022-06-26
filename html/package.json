@@ -2,7 +2,7 @@
   "name": "html",
   "private": true,
   "scripts": {
-    "build": "slidev build -o ../docs/html",
+    "build": "rm -rf ../docs/html && slidev build -o ../docs/html --base /web-ukazky/html/",
     "dev": "slidev --open",
     "export": "slidev export"
   },
