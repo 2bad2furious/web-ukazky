@@ -1,0 +1,8 @@
+ul{
+    margin-top: 0!important;
+}
+.slidev-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

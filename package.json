@@ -4,11 +4,13 @@
   "scripts": {
     "build:html": "rm -rf docs/html && slidev build html.md -o docs/html --base /web-ukazky/html/",
     "build:css": "rm -rf docs/css && slidev build css.md -o docs/css --base /web-ukazky/css/",
-    "dev": "slidev --open",
+    "dev:html": "slidev html.md --open",
+    "dev:css": "slidev css.md --open",
     "export": "slidev export"
   },
   "dependencies": {
     "@slidev/cli": "^0.33.0",
+    "@slidev/theme-apple-basic": "^0.20.0",
     "@slidev/theme-bricks": "^0.0.2",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
