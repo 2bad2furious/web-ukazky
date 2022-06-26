@@ -2,7 +2,7 @@
   "name": "html",
   "private": true,
   "scripts": {
-    "build": "slidev build -o ../docs/html",
+    "build": "slidev build -o ../docs/html --base ./",
     "dev": "slidev --open",
     "export": "slidev export"
   },
