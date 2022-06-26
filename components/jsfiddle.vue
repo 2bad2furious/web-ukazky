@@ -34,6 +34,7 @@ const props = defineProps({
   export default {
     computed: {
         computedLangs(): LANG[]{
+          console.debug(this);
           return this.langs ?? this.$slidev.configs.defaultFiddleLangs ?? ['html', 'css', 'js', 'result'];
         },
     }
