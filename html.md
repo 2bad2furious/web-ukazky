@@ -4,7 +4,7 @@ theme: bricks
 layout: cover
 routerMode: hash
 record: build
-
+selectable: true
 ---
 
 # HTML

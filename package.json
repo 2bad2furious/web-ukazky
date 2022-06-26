@@ -2,7 +2,8 @@
   "name": "html",
   "private": true,
   "scripts": {
-    "build": "rm -rf ../docs/html && slidev build -o ../docs/html --base /web-ukazky/html/",
+    "build:html": "rm -rf docs/html && slidev build html.md -o docs/html --base /web-ukazky/html/",
+    "build:css": "rm -rf docs/css && slidev build css.md -o docs/css --base /web-ukazky/css/",
     "dev": "slidev --open",
     "export": "slidev export"
   },
@@ -11,7 +12,6 @@
     "@slidev/theme-bricks": "^0.0.2",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
-    "@stackblitz/sdk": "^1.8.0",
     "slidev-theme-academic": "^1.1.0"
   }
 }
