@@ -1,0 +1,16 @@
+{
+  "name": "html",
+  "private": true,
+  "scripts": {
+    "build": "slidev build -o ../pages/html",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.33.0",
+    "@slidev/theme-bricks": "^0.0.2",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*",
+    "slidev-theme-academic": "^1.1.0"
+  }
+}
