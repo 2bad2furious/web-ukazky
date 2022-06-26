@@ -23,20 +23,8 @@ const props = defineProps({
 
 <template>
   <iframe width="100%" :height="height"
-          v-bind:src="'https://jsfiddle.net/' + source + '/embedded/' + (computedLangs.join(','))"
+          v-bind:src="'https://jsfiddle.net/' + source + '/embedded/' + ((langs ?? $slidev.configs.defaultFiddleLangs ?? ['html', 'css', 'js', 'result']).join(','))"
           allowpaymentrequest allowfullscreen="allowfullscreen" ref="frame" class="flex-grow">
   </iframe>
 </template>
 
-<script lang="ts">
-  import {LANG} from "./lang";
-
-  export default {
-    computed: {
-        computedLangs(): LANG[] {
-          console.debug(this);
-          return this.langs ?? this.$slidev.configs.defaultFiddleLangs ?? ['html', 'css', 'js', 'result'];
-        },
-    }
-  }
-</script>
