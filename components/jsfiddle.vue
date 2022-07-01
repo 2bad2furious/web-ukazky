@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import {PropType} from "vue";
-import {LANG} from "./lang";
+import {FIDDLE_LANG} from "./lang";
 
 // TODO listen to clicks
 
@@ -11,7 +11,7 @@ const props = defineProps({
     required: true
   },
   langs: {
-    type: Array as PropType<Array<LANG>>
+    type: Array as PropType<Array<FIDDLE_LANG>>
   },
   height: {
     type: Object,

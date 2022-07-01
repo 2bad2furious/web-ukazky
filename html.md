@@ -10,6 +10,8 @@ defaultFiddleLangs:
 - html
 - result
 
+penDefaultLang: html
+
 ---
 
 # HTML
@@ -47,7 +49,7 @@ layout: center
 
 # Komentáře
 
-<jsfiddle source="2bad2furious/nhouLgz2"/>
+<pen name="ExEaMre" />
 
 ---
 
@@ -55,13 +57,13 @@ layout: center
 
 - Ve spoustě editorů/IDE lze vygenerovat pomocí **!** a **Tab**
 
-<jsfiddle source="2bad2furious/drakLxeo"></jsfiddle>
+<pen name="zYWxbVm" />
 
 ---
 
 # Textové tagy
 
-<jsfiddle source="2bad2furious/2afvgtkm/"></jsfiddle>
+<pen name="wvmBOVg" />
 
 ---
 
@@ -71,7 +73,7 @@ layout: center
 - ***&lt;ul>*** je neuspořádaný seznam
 - ***&lt;li>*** je prvek seznamu
 
-<jsfiddle source="2bad2furious/zaxmoqvh"></jsfiddle>
+<pen name="vYREMBE" />
 
 ---
 
@@ -80,7 +82,7 @@ layout: center
 - atributem ***type*** můžeme změnit "číslování" prvků u ***ol***
 - u ***ul*** je toto chování ***deprecated*** a budeme muset použít **css**
 
-<jsfiddle source="2bad2furious/pfdvkcge"></jsfiddle>
+<pen name="ZExYNdp" />
 
 ---
 
@@ -90,25 +92,38 @@ layout: center
 |--------------------------------------------------------|-------------------------------------------|
 | ***&lt;th>*** - Table Header, hlavičková buňka tabulky | ***&lt;td>*** - Table Data, buňka tabulky |
 
-<jsfiddle source="2bad2furious/t4zsv76n" :height="null"/>
 
-*Také existují tagy tbody a thead*
+*Také existují tagy tbody, thead a tfoot, do kterých můžeme korespondující řádky zabalit*
+
+<pen name="JjLoqQO" />
+
+---
+
+# Tabulka 2
+
+- Můžeme také slučovat buňky v řádku/sloupci pomocí atributů **colspan**/**rowspan**.
+
+<pen name="YzaPboj" />
 
 ---
 
 # Layout tagy
 
 TODO
+<pen name="bGvNPNb" />
 
 ---
 
 # Kontejnery
 
 TODO
+<pen name="NWYPZPW" />
 
 ---
 
 # Další tagy
 
 TODO
+
+<pen name="QWmwXwb" />
 
