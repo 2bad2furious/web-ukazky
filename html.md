@@ -10,7 +10,7 @@ defaultFiddleLangs:
 - html
 - result
 
-penDefaultLang: html
+penDefaultLang: html,result
 
 ---
 
@@ -93,9 +93,9 @@ layout: center
 | ***&lt;th>*** - Table Header, hlavičková buňka tabulky | ***&lt;td>*** - Table Data, buňka tabulky |
 
 
-*Také existují tagy tbody, thead a tfoot, do kterých můžeme korespondující řádky zabalit*
-
 <pen name="JjLoqQO" />
+
+*Také existují tagy tbody, thead a tfoot, do kterých můžeme korespondující řádky zabalit*
 
 ---
 
@@ -107,9 +107,16 @@ layout: center
 
 ---
 
+# Formuláře I
+
+<pen name="zYWGxpX" />
+
+---
+
 # Layout tagy
 
 TODO
+
 <pen name="bGvNPNb" />
 
 ---
@@ -117,6 +124,7 @@ TODO
 # Kontejnery
 
 TODO
+
 <pen name="NWYPZPW" />
 
 ---
