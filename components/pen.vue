@@ -1,6 +1,6 @@
 <template>
   <iframe :height="height" style="width: 100%;" scrolling="no"
-          :src="url" frameborder="no" loading="lazy" class="flex-grow"
+          :src="url" frameborder="no" :loading="loading" class="flex-grow"
           allowtransparency="true" allowfullscreen="true">
     See the Pen <a :href="'https://codepen.io/'  + author + '/pen/' + name">Here</a>
   </iframe>
@@ -36,6 +36,10 @@ export default {
     height: {
       type: Object,
       default: 350
+    },
+    loading: {
+      type: String as PropType<'eager' | 'lazy'>,
+      default: 'eager'
     }
   },
   inject: {
