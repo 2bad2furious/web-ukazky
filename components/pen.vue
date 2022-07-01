@@ -2,6 +2,7 @@
   import {PropType} from "vue";
   import {CODEPEN_LANG} from "./lang";
 
+
   defineProps({
     name: {
       type: String,
@@ -30,6 +31,7 @@
 </script>
 
 <template>
+  {{$slidev.nav.currentPage}}
   <iframe :height="height" style="width: 100%;" scrolling="no" :src="'https://codepen.io/' + author + '/embed/' + name + '?' + queryParams" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
     See the Pen <a :href="'https://codepen.io/'  + author + '/pen/' + name">Here</a>
   </iframe>
@@ -38,6 +40,7 @@
 <script lang="ts">
 export default {
   name: "pen",
+  inject: ['$slidev'],
   computed: {
     globalDefaultLang(): string {
       console.debug(this);
