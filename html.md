@@ -107,31 +107,62 @@ layout: center
 
 ---
 
-# Formuláře I
+# Multimédia
 
-<pen name="zYWGxpX" />
+- ale hlavně obrázky
+
+<pen name="KKoMpeo" />
+
+Existují i **canvas** nebo **audio**.
 
 ---
 
 # Layout tagy
 
-TODO
+- Tagy pro nějaký určitý obsah, vždy je lepší volit vhodný prvek, aby uživatelé čteček nebo vyhledávače lépe rozuměli obsahu
 
 <pen name="bGvNPNb" />
+
+[MDN - nejen layout tagy](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#sectioning_content)
 
 ---
 
 # Kontejnery
 
-TODO
+- obecné prvky pro obalení obsahu
+  - hlavně z důvodu stylování
 
 <pen name="NWYPZPW" />
 
 ---
 
-# Další tagy
+# Formuláře I
 
-TODO
+<pen name="zYWGxpX" />
+
+Budeme hodně používat u JavaScriptu.
+
+---
+
+# Formuláře II
+
+- U políček lze také:
+    - nastavovat hodnotu pomocí atributu **value**, u **textarea** se hodnota vkládá dovnitř
+    - zabránit zadávání pomocí atributu **disabled**, lze také nastavit na fieldset pro všechny políčka najednou
+- Inputy mají mnoho typů :
+    - např. **text** (defaultní), **number**, **email**, **password**, **submit** (tlačítko pro odeslání)
+    - [MDN - input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)
+- U buttonů máme více typů:
+    - **submit** (defaultní ve formuláři), **button**, **reset**
+    - [MDN - button types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type)
+- Na formulářových prvcích lze vyjádřit validační pravidla pomocí atributů
+    - **min**, **max**, **required**, **type** (např. **email**), **maxlength**, **minlength**
+    - existuje také **pattern** (kde zadáte RegEx), ale ten po vás chtít nebudu :)
+    - [MDN - form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
+
+---
+
+# Další tagy
 
 <pen name="QWmwXwb" />
 
