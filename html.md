@@ -172,3 +172,11 @@ Budeme hodně používat u JavaScriptu.
 
 <pen name="QWmwXwb" />
 
+---
+
+# Další tagy II
+
+- Tagů je o hodně víc, ale základ máme za sebou
+
+<iframe src="https://www.itnetwork.cz/html-css/html5/html-manual/html-5-abecedni-rejstrik-tagu" class="flex-grow"></iframe>
+
