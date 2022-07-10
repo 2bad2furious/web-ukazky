@@ -34,7 +34,7 @@ layout: center
 
 - Dle párovosti
 - Dle významnosti
-    - Některé prvky jsou pouze stylovací - např. **b, i, div**
+    - Některé prvky jsou pouze stylovací nebo úplně bez významu- např. **b, i, div**
     - Některé prvky mají naopak hlubší význam - např. **strong, em, article**
 - Podle blokování řádku
     - Některé elementy si vyhradí řádek pro sebe
