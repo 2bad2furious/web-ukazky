@@ -20,7 +20,10 @@ layout: center
 
 - HyperText Markup Language
 - Značkovací jazyk
-- Používá tzv. **tagy**, které mohou mít **atributy**
+- Používá tzv. **tagy**, které mohou mít **atributy**, jako např.:
+  - **id** - unikátní identifikátor prvku na stránce
+  - **class** - třídy pro stylování
+  - **src** - zdroj například pro obrázek/video
 - Ty se zapisují do <> závorek
 - Mohou obsahovat další tagy
 - Mohou být **nepárové** nebo **párové** (musíme uzavřít pomocí &lt;/TAG>)
