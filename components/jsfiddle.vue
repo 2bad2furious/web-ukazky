@@ -25,6 +25,7 @@ const props = defineProps({
   <iframe width="100%" :height="height"
           v-bind:src="'https://jsfiddle.net/' + source + '/embedded/' + ((langs ?? $slidev.configs.defaultFiddleLangs ?? ['html', 'css', 'js', 'result']).join(','))"
           allowpaymentrequest allowfullscreen="allowfullscreen" ref="frame" class="flex-grow">
+
   </iframe>
 </template>
 

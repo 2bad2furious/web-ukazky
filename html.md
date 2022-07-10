@@ -5,10 +5,6 @@ layout: fact
 routerMode: hash
 record: build
 selectable: true
-defaultFiddleLangs:
-
-- html
-- result
 
 penDefaultLang: html,result
 
@@ -159,6 +155,13 @@ Budeme hodně používat u JavaScriptu.
     - **min**, **max**, **required**, **type** (např. **email**), **maxlength**, **minlength**
     - existuje také **pattern** (kde zadáte RegEx), ale ten po vás chtít nebudu :)
     - [MDN - form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
+
+---
+
+# Odkazy
+
+
+<pen name="OJvXyZE" />
 
 ---
 
