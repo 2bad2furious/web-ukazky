@@ -163,8 +163,10 @@ Budeme hodně používat u JavaScriptu.
 
 # Odkazy
 
-
 <pen name="OJvXyZE" />
+
+Pomocí atributu [**target**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target) můžeme specifikovat, kde se odkaz otevře.
+Např. **_blank** ho otevře v nové kartě (dle nastavení prohlížeče).
 
 ---
 
