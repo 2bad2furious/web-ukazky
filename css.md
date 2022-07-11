@@ -61,19 +61,29 @@ Způsoby dle priority od nejnižší po nejvyšší
 
 ---
 
-# Barvy
+# Barvy a jak je lze zadávat
 
-TODO: pojmenované, RGB model + alpha, zmínit HSL, atd.
+- pojmenované
+- RGB
+  - rgb funkce
+    - \+ průhlednost - rgba
+  - hexadecimální zápis
+    - \+ průhlednost
+  - další modely jako HSL
 
 ---
 
 # Velikosti
 
-TODO: Relativní a absolutní
+- relativní
+- absolutní
 
 ---
 
 # Textové vlastnosti
+
+- font
+- text
 
 ---
 
@@ -91,11 +101,28 @@ TODO: Relativní a absolutní
 
 # Display
 
+- none
+- block
+- inline
+- inline-block
+- flex
+
+---
+
+# Position
+
+- static
+- relative
+- absolute
+- fixed
+- sticky
+- absolute in relative
+
 ---
 
 # Další vlastnosti
 
-Cursor, opacity, transition, transform
+- Cursor, opacity, transition, transform
 
 --- 
 
