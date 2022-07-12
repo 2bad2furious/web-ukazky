@@ -59,3 +59,54 @@ penDefaultLang: html,result
 ---
 
 # Object - Slovník
+
+---
+
+# Funkce
+
+---
+
+# JSDoc
+
+---
+
+# Arrow funkce
+
+---
+
+# OOP
+
+---
+
+# Třídy
+
+---
+
+# Atributy
+
+CanIUse
+---
+
+# Metody
+
+---
+
+# Privátní atributy/metody
+
+---
+
+# Gettery a settery
+
+---
+
+# Statika
+
+---
+
+# Historie OOP v JS
+Trocha vysvětlení rozdílů mezi arrow a starými funkcemi
+
+---
+
+# Arrow funkce vs staré funkce uvnitř tříd  
+
