@@ -147,17 +147,16 @@ Budeme hodně používat u JavaScriptu.
 
 - U políček lze také:
     - nastavovat hodnotu pomocí atributu **value**, u **textarea** se hodnota vkládá dovnitř
-    - zabránit zadávání pomocí atributu **disabled**, lze také nastavit na fieldset pro všechny políčka najednou
-- Inputy mají mnoho typů :
-    - např. **text** (defaultní), **number**, **email**, **password**, **submit** (tlačítko pro odeslání)
-    - [MDN - input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)
-- U buttonů máme více typů:
-    - **submit** (defaultní ve formuláři), **button**, **reset**
-    - [MDN - button types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type)
-- Na formulářových prvcích lze vyjádřit validační pravidla pomocí atributů
+    - zabránit zadávání pomocí atributu **disabled**, lze také nastavit na **fieldset** pro všechna políčka najednou
+    - specifikovat [**name**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#name) atribut, pod kterým se data budou posílat (hlavně u SSR nebo form. knihoven)
+- Inputy mají mnoho [typů](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) :
+    - např. **text** (defaultní), **number**, **email**, **password**, **file**, **submit** (tlačítko pro odeslání), ...
+- U buttonů máme více [typů](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type):
+    - **submit** (defaultní ve formuláři), **button** (ten neodešle neodešle) a **reset**
+- Na formulářových prvcích lze vyjádřit [validační pravidla](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) pomocí atributů
     - **min**, **max**, **required**, **type** (např. **email**), **maxlength**, **minlength**
     - existuje také **pattern** (kde zadáte RegEx), ale ten po vás chtít nebudu :)
-    - [MDN - form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
+    - většina prvků, jako např. **select** nebo **input\[type=file]**, má ještě vlastní atributy
 
 ---
 
