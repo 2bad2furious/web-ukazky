@@ -6,7 +6,7 @@ routerMode: hash
 record: build
 selectable: true
 
-penDefaultLang: html,result
+penDefaultLang: js,result
 
 ---
 
@@ -31,6 +31,10 @@ penDefaultLang: html,result
 ---
 
 # Prompt
+
+---
+
+# Argumenty procesu
 
 ---
 
@@ -72,6 +76,8 @@ penDefaultLang: html,result
 
 # Arrow funkce
 
+---
+layout: fact
 ---
 
 # OOP
