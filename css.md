@@ -69,6 +69,18 @@ Seřazeno dle priority od nejnižší po nejvyšší
 
 ---
 
+# Debugování v prohlížeči
+
+---
+
+# Resetování hodnot
+
+- unset
+- initial
+- revert
+- inherit
+
+---
 
 # [Barvy a jak je lze zadávat](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
 
@@ -76,29 +88,122 @@ Seřazeno dle priority od nejnižší po nejvyšší
 
 ---
 
-# Velikosti
+# [Velikosti](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
+Alespoň ty hlavní
 
-- relativní
-- absolutní
+- **absolutní**
+  - **px** (většinou ekvivalentní k 1 px na obrazovce)
+- **relativní k velikosti písma**
+  - **em** (velikost písma daného elementu)
+  - **rem** (velikost písma kořenového elementu)
+- **relativní k velikosti okna**
+  - **vh** (1 % výšky okna)
+  - **vw** (1 % šířky okna)
+- **relativní k velikosti rodiče**
+  - **%** (1 % šířky rodiče)
+
+<div class="flex-grow"></div>
+
+Hodnoty s jednotkami píšeme bez mezer (např. 100px).
 
 ---
 
 # Textové vlastnosti
 
-- font
-- text
+- **color** (barva písma)
+- **font** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/font) pro aplikování následujících)
+  - **font-family** (název písma, resp. názvy oddělené čárkou, použije se první dostupné)<sup>(1)</sup>
+  - **font-size** (velikost písma, většinou v **em**, **rem**)
+  - **font-weight** (tloušťka písma, **1-1000**<sup>(2)</sup> nebo **lighter**, **light**, **normal**, **bold**, **bolder**)
+- **text**
+  - **text-align** (zarovnání textu, např. **start**, **left**, **center**, **end**, **right**, **justify**)<sup>(3)</sup>
+  - **text-decoration** (dekorace textu, např. **none**, **underline**, **line-through**)
+- **line-height** (výška řádku, většinou v poměru k velikosti písma (např. **1.2**))
+
+<div class="flex-grow"></div>
+
+<footer>
+<sup>(1)</sup> Fonty často hledáme online, např. <a href="https://fonts.google.com">fonts.google.com</a>, do seznamu můžeme také dávat generické názvy (viz ukázka)<br>
+<sup>(2)</sup> 1 je nejmenší, 1000 největší tloušťka<br>
+<sup>(3)</sup> <strong>start</strong> a <strong>end</strong> se mění podle směru čtení
+</footer>
+
+---
+
+# Textové vlastnosti
+
+<pen name="vYRgLZZ"/>
+
 
 ---
 
 # Boxmodel
 
+<img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png" alt="Boxmodel"/>
+
+---
+
+# Boxmodel
+
+- **padding** (vnitřní spacing, vlastnost pro zkrácený zápis)
+  - **padding-left**, **padding-top**, **padding-right**, **padding-bottom**
+  - často se hodí udávat v hodnotách relativních k **font-size**
+- **margin** (vnější spacing, vlastnost pro zkrácený zápis)
+  - **margin-left**, **margin-top**, **margin-right**, **margin-bottom**
+  - často se hodí udávat v hodnotách relativních k **font-size** nebo **auto** pro zabrání co nejvíce místa
+- **width** (nastaví šířku obsahu nebo "viditelného" boxu dle **box-sizing**) <sup>(1)</sup>
+- **height** (nastaví výšku obsahu nebo "viditelného" boxu dle **box-sizing**) <sup>(1)</sup>
+- **box-sizing**
+  - **content-box** (default, **width**/**height** nastavuje jenom **obsah**)
+  - **border-box** (**width**/**height** nastavuje **obsah** + **padding** + **border**)
+
+<div class="flex-grow"></div>
+<footer class="flex gap-2">
+<sup>(1)</sup> <div>Viditelný box je box <strong>bez marginu</strong>, tedy <strong>box-sizing: border-box</strong><br>
+U inline elementů height a width nebude fungovat
+</div>
+</footer>
+
 ---
 
 # Boxmodel - border
 
+- **border** (rámeček, vlastnost pro zkrácený zápis)
+  - **border-width** (velikost rámečku), **border-color** (barva rámečku)
+  - **border-style** (styl rámečku, lze stylovat i na jednotlivé strany, **solid**, **none**, **dotted**, **dashed**)
+  - **border-radius** (zaoblení rohů, lze stylovat i jednotlivé rohy, hodnoty jsou klasické velikosti)
+
+<pen name="zYWNBjy" />
+Pozor, vše kromě none a solid vypadá v každém prohlížeči jinak.
+
+---
+
+# Boxmodel
+
+<pen name="zYWNBjy" />
+
 ---
 
 # Pozadí
+
+- **background** (vlastnost na zkrácený zápis)
+  - **background-color** (barva pozadí)
+  - **background-image** (obrázek na pozadí, lze zadávat **url(adresa)**) <sup>(1)</sup>
+  - **background-repeat** (opakování pozadí)
+  - **background-attachment**
+  - **background-size**
+  - **background-position**
+
+<div class="flex-grow"></div>
+<footer>
+<sup>(1)</sup> místo adresy v <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/url"><strong>url</strong></a> lze používat i spoustu jiných hodnot
+</footer>
+
+---
+
+# Pozadí
+
+<pen />
 
 ---
 
