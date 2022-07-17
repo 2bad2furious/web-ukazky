@@ -13,13 +13,15 @@ penDefaultLang: css,result
 # CSS
 
 ---
+layout: center
+---
 
 # Co je to CSS?
 
-- Cascading Style Sheets
+- **C**ascading **S**tyle **S**heets
 - Jazyk pro stylování (primárně) HTML
-- Umožňuje nám přidávat vlastnosti prvkům na stránce
-- Vlastnosti jednoho prvku můžeme mít nedfinované na více místech
+- Umožňuje nám přidávat styly prvkům na stránce pomocí vlastností a jejich hodnot
+- Vlastnosti jednoho prvku můžeme mít definované na více místech
 
 ---
 
@@ -69,16 +71,37 @@ Seřazeno dle priority od nejnižší po nejvyšší
 
 ---
 
-# Debugování v prohlížeči
+# [Zavináče](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule#index)
+Alespoň ty nejčastější
+
+- **@import** - použití jiného css souboru
+- **@font-face** - deklarace písma pro aplikaci
+- **@keyframes** - deklarace animací
+- **@media** - aplikuje vložené styly pouze za nějaké podmínky, např. dle rozlišení či místa zobrazení
+
+<div class="flex-grow"/>
+
+Ale o nich více později.
 
 ---
 
-# Resetování hodnot
+# [Hodnoty pro reset vlastností](https://www.kevinpowell.co/article/initial-unset-revert/)
 
-- unset
-- initial
-- revert
-- inherit
+- **inherit** (nastaví hodnotu na poděděnou)
+- **initial** (nastaví hodnotu na defaultní dle specifikace)
+- **unset** (nastaví hodnotu na poděděnou, pokud je vlastnost děděná, jinak na defaultní dle specifikace)
+- **revert** (nastaví hodnotu na poděděnou, pokud je vlastnost děděná, jinak na defaultní prohlížeče nebo uživatele)
+
+<div class="flex-grow"/>
+Jestli je musíte použít, pravděpodobně jste už udělali chybu někde jinde. 
+
+---
+
+# Debugování v prohlížeči
+
+<div style="background: url('css-debug.png') no-repeat; background-size: contain" class="flex-grow"/>
+
+Dev console v prohlížeči nám může pomoci zjistit, jaké styly se aplikují, kde jsou definovány, a mnoho dalšího.
 
 ---
 
@@ -190,9 +213,9 @@ Pozor, vše kromě none a solid vypadá v každém prohlížeči jinak.
   - **background-color** (barva pozadí)
   - **background-image** (obrázek na pozadí, lze zadávat **url(adresa)**) <sup>(1)</sup>
   - **background-repeat** (opakování pozadí)
-  - **background-attachment**
-  - **background-size**
-  - **background-position**
+  - **background-attachment** (propojení pozadí s oknem nebo se skrolováním, např. **fixed**, **local**, **scroll**)
+  - **background-size** (velikost pozadí, např. **contain**, **cover**, **50%** nebo **200px**)
+  - **background-position** (pozice pozadí)
 
 <div class="flex-grow"></div>
 <footer>
@@ -203,7 +226,7 @@ Pozor, vše kromě none a solid vypadá v každém prohlížeči jinak.
 
 # Pozadí
 
-<pen />
+<pen name="ZExLMeZ" />
 
 ---
 
