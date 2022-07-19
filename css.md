@@ -21,7 +21,6 @@ layout: center
 - **C**ascading **S**tyle **S**heets
 - Jazyk pro stylování (primárně) HTML
 - Umožňuje nám přidávat styly prvkům na stránce pomocí vlastností a jejich hodnot
-- Vlastnosti jednoho prvku můžeme mít definované na více místech
 
 ---
 
@@ -72,6 +71,7 @@ Seřazeno dle priority od nejnižší po nejvyšší
 ---
 
 # [Zavináče](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule#index)
+
 Alespoň ty nejčastější
 
 - **@import** - použití jiného css souboru
@@ -93,6 +93,7 @@ Ale o nich více později.
 - **revert** (nastaví hodnotu na poděděnou, pokud je vlastnost děděná, jinak na defaultní prohlížeče nebo uživatele)
 
 <div class="flex-grow"/>
+
 Jestli je musíte použít, pravděpodobně jste už udělali chybu někde jinde. 
 
 ---
@@ -112,6 +113,7 @@ Dev console v prohlížeči nám může pomoci zjistit, jaké styly se aplikují
 ---
 
 # [Velikosti](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
+
 Alespoň ty hlavní
 
 - **absolutní**
@@ -132,6 +134,8 @@ Hodnoty s jednotkami píšeme bez mezer (např. 100px).
 ---
 
 # Textové vlastnosti
+
+Alespoň ty hlavní
 
 - **color** (barva písma)
 - **font** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/font) pro aplikování následujících)
@@ -157,6 +161,21 @@ Hodnoty s jednotkami píšeme bez mezer (např. 100px).
 
 <pen name="vYRgLZZ"/>
 
+
+---
+
+# [Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+
+Alespoň ty hlavní
+
+- **none** (schová element)
+- **block** nastaví element jako blokový - vyhradí si celý řádek)
+- **inline** (nastaví element jako řádkový - vyhradí si pouze potřebné místo)
+- **inline-block** (kombinace **inline** a **block**, vyhradí si jen potřebné místo, ale:
+  - může mít např. **width** a **height**
+  - a vertikální **margin**/**padding** se chová "normálně")
+- **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)
+- **grid** (skládání vnitřních prvků do virtuálních boxů)
 
 ---
 
@@ -196,8 +215,9 @@ U inline elementů height a width nebude fungovat
   - **border-style** (styl rámečku, lze stylovat i na jednotlivé strany, **solid**, **none**, **dotted**, **dashed**)
   - **border-radius** (zaoblení rohů, lze stylovat i jednotlivé rohy, hodnoty jsou klasické velikosti)
 
-<pen name="zYWNBjy" />
-Pozor, vše kromě none a solid vypadá v každém prohlížeči jinak.
+<pen name="yLKgaNQ" />
+
+Pozor, vše kromě **none** a **solid** vypadá v každém prohlížeči jinak.
 
 ---
 
@@ -230,30 +250,45 @@ Pozor, vše kromě none a solid vypadá v každém prohlížeči jinak.
 
 ---
 
-# Display
+# Position
 
-- none
-- block
-- inline
-- inline-block
-- flex
+- **static** (defaultní hodnota)
+- **relative** (umožňuje element posunout relativně k jeho původní pozici)
+- **fixed** (umožňuje element pozicovat absolutně v okně)
+- **sticky** (umožňuje elementu zůstat viditelný co nejdéle to jde)
+- **absolute** (umožňuje element pozicovat absolutně v jeho *containing-block*)
+  - [*containing-block*](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) je buď **body** nebo nejbližší předek s pozicí jinou než **static**
+
+
+<!-- TODO sticky description -->
 
 ---
 
 # Position
 
-- static
-- relative
-- absolute
-- fixed
-- sticky
-- absolute in relative
+---
+
+# Animace
+
+- **animation** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) pro zkrácený zápis)
+  - **animation-delay**
+  - **animation-direction**
+  - **animation-duration**
+  - **animation-fill-mode**
+  - **animation-iteration-count**
+  - **animation-name**
+  - **animation-play-state**
+  - **animation-timing-function**
 
 ---
 
 # Další vlastnosti
 
-- Cursor, opacity, transition, transform, shadow
+- **cursor**
+- **opacity**
+- **transition**
+- **transform**
+- **shadow**
 
 ---
 
@@ -264,3 +299,7 @@ Pozor, vše kromě none a solid vypadá v každém prohlížeči jinak.
 ---
 
 # Prefixing
+
+<div class="flex-grow"/>
+
+Dnes už ...
