@@ -145,7 +145,7 @@ Alespoň ty hlavní
 - **text**
   - **text-align** (zarovnání textu, např. **start**, **left**, **center**, **end**, **right**, **justify**)<sup>(3)</sup>
   - **text-decoration** (dekorace textu, např. **none**, **underline**, **line-through**)
-- **line-height** (výška řádku, většinou v poměru k velikosti písma (např. **1.2**))
+- **line-width** (výška řádku, většinou v poměru k velikosti písma (např. **1.2**))
 
 <div class="flex-grow"></div>
 
@@ -172,10 +172,16 @@ Alespoň ty hlavní
 - **block** nastaví element jako blokový - vyhradí si celý řádek)
 - **inline** (nastaví element jako řádkový - vyhradí si pouze potřebné místo)
 - **inline-block** (kombinace **inline** a **block**, vyhradí si jen potřebné místo, ale:
-  - může mít např. **width** a **height**
+  - může mít např. **width** a **width**
   - a vertikální **margin**/**padding** se chová "normálně")
 - **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)
 - **grid** (skládání vnitřních prvků do virtuálních boxů)
+
+---
+
+# Display
+
+<pen name="WNzjjJW" />
 
 ---
 
@@ -193,18 +199,24 @@ Alespoň ty hlavní
 - **margin** (vnější spacing, vlastnost pro zkrácený zápis)
   - **margin-left**, **margin-top**, **margin-right**, **margin-bottom**
   - často se hodí udávat v hodnotách relativních k **font-size** nebo **auto** pro zabrání co nejvíce místa
-- **width** (nastaví šířku obsahu nebo "viditelného" boxu dle **box-sizing**) <sup>(1)</sup>
-- **height** (nastaví výšku obsahu nebo "viditelného" boxu dle **box-sizing**) <sup>(1)</sup>
 - **box-sizing**
-  - **content-box** (default, **width**/**height** nastavuje jenom **obsah**)
-  - **border-box** (**width**/**height** nastavuje **obsah** + **padding** + **border**)
+  - **content-box** (default, **width**/**width** nastavuje jenom **obsah**)
+  - **border-box** (**width**/**width** nastavuje **obsah** + **padding** + **border**)
 
 <div class="flex-grow"></div>
 <footer class="flex gap-2">
 <sup>(1)</sup> <div>Viditelný box je box <strong>bez marginu</strong>, tedy <strong>box-sizing: border-box</strong><br>
-U inline elementů height a width nebude fungovat
+U inline elementů width a width nebude fungovat
 </div>
 </footer>
+
+---
+
+# Boxmodel - výška/šířka
+
+- **height**, **min-height**, **max-height** (výška, minimální výška a maximální výška)
+- **width**, **min-width**, **max-width** (šírka, minimální šířka a maximální šířka)
+- hodnoty lze nastavovat ve velikostních jednotkách nebo **auto** (prohlížeč vybere hodnotu)
 
 ---
 
@@ -258,13 +270,18 @@ Pozor, vše kromě **none** a **solid** vypadá v každém prohlížeči jinak.
 - **sticky** (umožňuje elementu zůstat viditelný co nejdéle to jde)
 - **absolute** (umožňuje element pozicovat absolutně v jeho *containing-block*)
   - [*containing-block*](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) je buď **body** nebo nejbližší předek s pozicí jinou než **static**
+- vlastností **z-index** nastavíme, který element překrývá který (vyšší hodnota překrývá nižší) 
 
+
+<pen name="qBomjxM" />
 
 <!-- TODO sticky description -->
 
 ---
 
 # Position
+
+<pen name="ExEmmzm" />
 
 ---
 
@@ -279,6 +296,12 @@ Pozor, vše kromě **none** a **solid** vypadá v každém prohlížeči jinak.
   - **animation-name**
   - **animation-play-state**
   - **animation-timing-function**
+
+---
+
+# Animace
+
+<pen name="yLKbbde" />
 
 ---
 
