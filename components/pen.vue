@@ -22,6 +22,10 @@ export default {
       type: String,
       default: '2bad2furious'
     },
+    clickToLoad: {
+      type: Boolean,
+      default: false
+    },
     editable: {
       type: Boolean,
       default: true
@@ -47,7 +51,7 @@ export default {
   },
   computed: {
     url(): string {
-      return 'https://codepen.io/' + this.author + '/embed/' + this.name + '?' + this.queryParams;
+      return 'https://codepen.io/' + this.author + '/embed/' + (this.clickToLoad ? 'preview/' : '') + this.name + '?' + this.queryParams;
     },
     globalDefaultLang(): string {
       return this.$slidev.configs.penDefaultLang;

@@ -24,6 +24,7 @@ layout: center
 - s Javou nemá nic společného, název byl pouze marketingovým tahem
 - velmi tolerantní k chybám, málokdy opravdu spadne
 - [pravidelné nové verze](https://en.wikipedia.org/wiki/ECMAScript)
+- narozdíl od Javy nemáme **main**, kód prostě píšeme do souboru
 
 ---
 
@@ -56,11 +57,15 @@ Deklarace proměnné je její vytvoření, před použitím ji musíme deklarova
 - **undefined** (prázdná hodnota, např. když zapomeneme dát proměnné hodnotu)
 - **null** (prázdná hodnota)
 
+
+
 ---
 
 # Práce s hodnotami - operátory
 
 <pen name="qBoYKqm"/>
+
+Pozor na tolerantnost k chybám, js nám umožňuje např. dělit string číslem.
 
 ---
 
@@ -72,30 +77,38 @@ Deklarace proměnné je její vytvoření, před použitím ji musíme deklarova
 
 # Parsování
 
-<pen name=""/>
+<pen name="JjLvBmx"/>
+
+**NaN** je speciální hodnota, která vyjadřuje, že výsledkem operace mělo být číslo, ale z nějakého důvodu nemohlo, jako např. když počítáme s **undefined** nebo právě při nepovedeném **parsování**.
 
 ---
 
 # Funkcionality jenom na webu
 
-- **alert**
-- **prompt**
+<pen name="bGvMjPW" clickToLoad="true" />
 
-<pen name=""/>
+V praxi se moc nepoužívají, protože se nedají stylovat, ale nám budou zatím stačit.
 
 ---
 
-# Argumenty procesu
+# Spouštění js lokálně
 
-<pen name=""/>
+- Potřebujeme mít nainstalovaný [node.js](https://nodejs.org/en/download/)
+- **prompt** ale není součástí js samotného. S [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) je možné použít např. [prompt-sync](https://www.npmjs.com/package/prompt-sync)
+- Procesům můžeme posílat hodnoty pomocí tzv. [argumentů](https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/).
 
 ---
 
 # Práce se stringy
 
+<pen name="ZExoMRZ" />
+
+
 ---
 
 # Matematické utility
+
+<pen name="zYWjJXx" />
 
 ---
 
