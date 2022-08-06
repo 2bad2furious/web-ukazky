@@ -13,32 +13,81 @@ penDefaultLang: js,result
 # JavaScript
 
 ---
+layout: center
+---
 
 # Co? Proč?
+
+- dynamicky typovaný jazyk (nepíšeme datové typy jako v Javě)
+- na straně klienta (v prohlížeči) přináší interaktivitu webovým stránkám
+- lze použít i na straně serveru
+- s Javou nemá nic společného, název byl pouze marketingovým tahem
+- velmi tolerantní k chybám, málokdy opravdu spadne
+- [pravidelné nové verze](https://en.wikipedia.org/wiki/ECMAScript)
 
 ---
 
 # Komentáře a výpis
 
+<pen name="MWVGGvz"/>
+
 ---
 
-# Proměnné a datové typy
+# Proměnné
+
+- Proměnné deklarujeme pomocí klíčových slovíček **let** nebo **const**, datové typy nepíšeme
+  - **let** vytváří měnitelnou proměnnou
+  - **const** vytváří neměnitelnou proměnnou
+  - **var** je zastaralý způsob s odlišným chováním od jiných jazyků 
+
+<pen name="VwXxxXK"/>
+
+Deklarace proměnné je její vytvoření, před použitím ji musíme deklarovat, nemůžeme ale deklarovat 2x se stejným názvem.
+
+---
+
+# Datové typy
+
+- **String**
+  - nemáme chary
+- **Number**
+  - nerozlišujeme datovým typem desetinná a celá čísla
+- **Boolean**
+- **undefined** (prázdná hodnota, např. když zapomeneme dát proměnné hodnotu)
+- **null** (prázdná hodnota)
+
+---
+
+# Práce s hodnotami - operátory
+
+<pen name="qBoYKqm"/>
 
 ---
 
 # Stringy a interpolace
 
+<pen name="zYWjaPo"/>
+
 ---
 
 # Parsování
 
+<pen name=""/>
+
 ---
 
-# Prompt
+# Funkcionality jenom na webu
+
+- **alert**
+- **prompt**
+
+<pen name=""/>
 
 ---
 
 # Argumenty procesu
+
+<pen name=""/>
 
 ---
 
@@ -47,6 +96,14 @@ penDefaultLang: js,result
 ---
 
 # Matematické utility
+
+---
+
+# Scope
+
+Proměnné v JavaScriptu (stejně jako v Javě) existují (a jsou přístupné) pouze ze stejných nebo vnitřních složených závorek
+
+<pen name="yLKjjrr"/>
 
 ---
 
