@@ -53,7 +53,7 @@ layout: center
 
 ---
 
-# Kde všude jsou/lze psát styly?
+# [Kde všude jsou/lze psát styly?](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
 
 Seřazeno dle priority od nejnižší po nejvyšší
 - nějaké styly už mají prohlížeče
@@ -166,7 +166,7 @@ Alespoň ty hlavní
 
 # [Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
-Alespoň ty hlavní
+Alespoň ty hlavní hodnoty
 
 - **none** (schová element)
 - **block** nastaví element jako blokový - vyhradí si celý řádek)
@@ -188,6 +188,8 @@ Alespoň ty hlavní
 # Boxmodel
 
 <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png" alt="Boxmodel"/>
+
+[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png)
 
 ---
 
@@ -285,33 +287,40 @@ Pozor, vše kromě **none** a **solid** vypadá v každém prohlížeči jinak.
 
 ---
 
-# Animace
+# Přechody
 
-- **animation** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) pro zkrácený zápis)
-  - **animation-delay**
-  - **animation-direction**
-  - **animation-duration**
-  - **animation-fill-mode**
-  - **animation-iteration-count**
-  - **animation-name**
-  - **animation-play-state**
-  - **animation-timing-function**
+- **transition** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) pro zkrácený zápis)
+  - **transition-property** (vlastnosti, kterou chceme "animovat", např. **background** nebo **all**)
+  - **transition-duration** (délka přechodu, zadáváme hodnotu s časovou jednotkou, např. **250ms** nebo **.25s**)
+  - **transition-timing-function** ([křivka přechodu](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function), např. **linear** nebo **ease-in**)
+  - **transition-delay** (zpoždění animace, stejná syntax jako **transition-duration**)
 
 ---
 
-# Animace
+# Přechody
 
-<pen name="yLKbbde" />
+<pen name="GRxdxbZ"/>
 
 ---
+
+# [Animovatelné vlastnosti](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+
+nejsou všechny, ale např. tyto jsou:
+
+- **background**
+- **border**
+- **top**, **bottom**, **left**, **right**
+- **margin**, **padding**
+
+--- 
 
 # Další vlastnosti
 
-- **cursor**
-- **opacity**
-- **transition**
-- **transform**
-- **shadow**
+- **cursor** (změní styl kurzoru po dobu najetí na element)
+- **opacity** (změní průhlednost elementu)
+- **box-shadow** (nastaví stín elementu)
+- **animation** (využije **@keyframe** animaci s přesnější definicí průběhu)
+- **transform** (umožňuje měnit zobrazení, např. zvětšení, rotace, posunutí podobně jako **display:absolute**)
 
 ---
 

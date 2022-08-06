@@ -26,6 +26,10 @@ penDefaultLang: js,result
 
 ---
 
+# Stringy a interpolace
+
+---
+
 # Parsování
 
 ---
@@ -50,6 +54,10 @@ penDefaultLang: js,result
 
 --- 
 
+# Neočekávané chování
+
+---
+
 # Cykly
 
 ---
@@ -67,6 +75,11 @@ penDefaultLang: js,result
 ---
 
 # Funkce
+
+---
+
+# Moduly a import/export
+
 
 ---
 
@@ -91,6 +104,7 @@ layout: fact
 # Atributy
 
 CanIUse
+
 ---
 
 # Metody
@@ -108,8 +122,25 @@ CanIUse
 # Statika
 
 ---
+layout: center
+---
 
 # Historie OOP v JS
+Trocha vysvětlení rozdílů mezi arrow a starými funkcemi
+
+---
+
+# Historie OOP v JS - funkce jako konstruktor
+Trocha vysvětlení rozdílů mezi arrow a starými funkcemi
+
+---
+
+# Historie OOP v JS - protoypy
+Trocha vysvětlení rozdílů mezi arrow a starými funkcemi
+
+---
+
+# Historie OOP v JS - ES6 třídy
 Trocha vysvětlení rozdílů mezi arrow a starými funkcemi
 
 ---
