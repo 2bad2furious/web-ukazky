@@ -392,9 +392,24 @@ hideInToc: true
 <iframe src="https://www.itnetwork.cz/html-css/css3/css-manual/cesky-css-3-manual-rejstrik" class="flex-grow"></iframe>
 
 ---
+title: Prefixing
+---
 
-# Prefixing
+# [Prefixing](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)
+
+- prefix před vlastnosti
+- pro experimentální funkčnosti (zprovoznění funkčnosti na starších prohlížečích, kde byla experimentální)
+
+```css {2-5}
+.animated {
+  -webkit-transition: all 4s ease;
+  -moz-transition: all 4s ease;
+  -ms-transition: all 4s ease;
+  -o-transition: all 4s ease;
+  transition: all 4s ease;
+}
+```
 
 <div class="flex-grow"/>
 
-Dnes už ...
+Dnes už se z více důvodu prefixy moc do prohlížečů nepřidávají. Prefixing pro nás v praxi něco dělá automaticky.
