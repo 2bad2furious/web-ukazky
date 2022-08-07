@@ -1,6 +1,7 @@
 {
   "name": "html",
   "private": true,
+  "homepage": "https://martinmacura.cz/web-ukazky/",
   "scripts": {
     "build:html": "rm -rf docs/html && slidev build html.md -o docs/html --base /web-ukazky/html/",
     "build:css": "rm -rf docs/css && slidev build css.md -o docs/css --base /web-ukazky/css/",
