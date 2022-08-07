@@ -7,10 +7,22 @@ record: build
 selectable: true
 
 penDefaultLang: css,result
-
+hideInToc: true
 ---
 
 # CSS
+
+---
+layout: two-cols
+class: flex items-center justify-between
+hideInToc: true
+---
+
+# Obsah
+
+::right::
+
+<Toc columns="1" maxDepth="1" listClass="underline" />
 
 ---
 layout: center
@@ -23,6 +35,8 @@ layout: center
 - Umožňuje nám přidávat styly prvkům na stránce pomocí vlastností a jejich hodnot
 
 ---
+hideInToc: true
+---
 
 # Základní koncepty I
 
@@ -32,11 +46,15 @@ layout: center
 <pen name="abYZvqN" defaultLang="html,css"/>
 
 ---
+hideInToc: true
+---
 
 # [Základní selektory](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 
 <pen name="KKoMVxg" />
 
+---
+hideInToc: true
 ---
 
 # Základní koncepty II
@@ -52,6 +70,8 @@ layout: center
 <pen name="GRxqoBa"/>
 
 ---
+hideInToc: true
+---
 
 # [Kde všude jsou/lze psát styly?](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
 
@@ -63,11 +83,15 @@ Seřazeno dle priority od nejnižší po nejvyšší
   - zde nepíšeme selektory
 
 ---
+hideInToc: true
+---
 
 # Pseudo [třídy](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) a [elementy](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
   
 <pen name="rNdMJQK" />
 
+---
+hideInToc: true
 ---
 
 # [Zavináče](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule#index)
@@ -84,6 +108,8 @@ Alespoň ty nejčastější
 Ale o nich více později.
 
 ---
+hideInToc: true
+---
 
 # [Hodnoty pro reset vlastností](https://www.kevinpowell.co/article/initial-unset-revert/)
 
@@ -97,19 +123,25 @@ Ale o nich více později.
 Jestli je musíte použít, pravděpodobně jste už udělali chybu někde jinde. 
 
 ---
+hideInToc: true
+---
 
-# Debugování v prohlížeči
+# [Debugování v prohlížeči](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
 
 <div style="background: url('css-debug.png') no-repeat; background-size: contain" class="flex-grow"/>
 
 Dev console v prohlížeči nám může pomoci zjistit, jaké styly se aplikují, kde jsou definovány, a mnoho dalšího.
 
 ---
+title: Barvy
+---
 
 # [Barvy a jak je lze zadávat](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
 
 <pen name="yLKaKJq" />
 
+---
+title: Velikosti
 ---
 
 # [Velikosti](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
@@ -132,8 +164,10 @@ Alespoň ty hlavní
 Hodnoty s jednotkami píšeme bez mezer (např. 100px).
 
 ---
+title: Textové vlastnosti
+---
 
-# Textové vlastnosti
+# [Textové vlastnosti](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals)
 
 Alespoň ty hlavní
 
@@ -156,6 +190,8 @@ Alespoň ty hlavní
 </footer>
 
 ---
+hideInToc: true
+---
 
 # Textové vlastnosti
 
@@ -163,6 +199,9 @@ Alespoň ty hlavní
 
 
 ---
+title: Display
+---
+
 
 # [Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
@@ -178,6 +217,8 @@ Alespoň ty hlavní hodnoty
 - **grid** (skládání vnitřních prvků do virtuálních boxů)
 
 ---
+hideInToc: true
+---
 
 # Display
 
@@ -192,8 +233,10 @@ Alespoň ty hlavní hodnoty
 [https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png)
 
 ---
+hideInToc: true
+---
 
-# Boxmodel
+# [Boxmodel](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
 
 - **padding** (vnitřní spacing, vlastnost pro zkrácený zápis)
   - **padding-left**, **padding-top**, **padding-right**, **padding-bottom**
@@ -213,6 +256,8 @@ U inline elementů width a width nebude fungovat
 </footer>
 
 ---
+hideInToc: true
+---
 
 # Boxmodel - výška/šířka
 
@@ -220,6 +265,8 @@ U inline elementů width a width nebude fungovat
 - **width**, **min-width**, **max-width** (šírka, minimální šířka a maximální šířka)
 - hodnoty lze nastavovat ve velikostních jednotkách nebo **auto** (prohlížeč vybere hodnotu)
 
+---
+hideInToc: true
 ---
 
 # Boxmodel - border
@@ -234,6 +281,8 @@ U inline elementů width a width nebude fungovat
 Pozor, vše kromě **none** a **solid** vypadá v každém prohlížeči jinak.
 
 ---
+hideInToc: true
+---
 
 # Boxmodel
 
@@ -243,7 +292,7 @@ Pozor, vše kromě **none** a **solid** vypadá v každém prohlížeči jinak.
 
 # Pozadí
 
-- **background** (vlastnost na zkrácený zápis)
+- **background** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/background) na zkrácený zápis)
   - **background-color** (barva pozadí)
   - **background-image** (obrázek na pozadí, lze zadávat **url(adresa)**) <sup>(1)</sup>
   - **background-repeat** (opakování pozadí)
@@ -257,14 +306,18 @@ Pozor, vše kromě **none** a **solid** vypadá v každém prohlížeči jinak.
 </footer>
 
 ---
+hideInToc: true
+---
 
 # Pozadí
 
 <pen name="ZExLMeZ" />
 
 ---
+title: Position
+---
 
-# Position
+# [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 
 - **static** (defaultní hodnota)
 - **relative** (umožňuje element posunout relativně k jeho původní pozici)
@@ -279,6 +332,8 @@ Pozor, vše kromě **none** a **solid** vypadá v každém prohlížeči jinak.
 
 <!-- TODO sticky description -->
 
+---
+hideInToc: true
 ---
 
 # Position
@@ -296,11 +351,15 @@ Pozor, vše kromě **none** a **solid** vypadá v každém prohlížeči jinak.
   - **transition-delay** (zpoždění animace, stejná syntax jako **transition-duration**)
 
 ---
+hideInToc: true
+---
 
 # Přechody
 
 <pen name="GRxdxbZ"/>
 
+---
+hideInToc: true
 ---
 
 # [Animovatelné vlastnosti](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
@@ -322,6 +381,8 @@ nejsou všechny, ale např. tyto jsou:
 - **animation** (využije **@keyframe** animaci s přesnější definicí průběhu)
 - **transform** (umožňuje měnit zobrazení, např. zvětšení, rotace, posunutí podobně jako **display:absolute**)
 
+---
+hideInToc: true
 ---
 
 # Ale je toho zase více
