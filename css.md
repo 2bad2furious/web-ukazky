@@ -128,7 +128,9 @@ hideInToc: true
 
 # [Debugování v prohlížeči](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
 
-<div style="background: url('css-debug.png') no-repeat; background-size: contain" class="flex-grow"/>
+<div style="background: url('https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS/inspecting1.png') no-repeat; background-size: contain" class="flex-grow"/>
+
+[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS/inspecting1.png](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS/inspecting1.png)
 
 Dev console v prohlížeči nám může pomoci zjistit, jaké styly se aplikují, kde jsou definovány, a mnoho dalšího.
 
