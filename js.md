@@ -28,13 +28,28 @@ layout: center
 
 ---
 
-# Komentáře a výpis
+# [Jak ho spustíme v prohlížeči?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#how_do_you_add_javascript_to_your_page)
 
-<pen name="MWVGGvz"/>
+Nejdříve vytvoříme html soubor se základní strukturou, poté máme více možností:
+
+- [Inline](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#internal_javascript) (vložíme **script** tag na konec hlavičky a do něho píšeme)
+- [Externí soubor](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#external_javascript) (vložíme **script** tag na konec hlavičky, přidejme atribut **src** s cestou k vašemu js souboru)
+
+Funkčnost našeho skriptu si můžeme ověřit:
+
+<pen name="jOzxRdQ"/>
+
 
 ---
 
-# Proměnné
+# Komentáře a výpis
+
+<pen name="MWVGGvz"/>
+Středníky na konci řádků nejsou povinné 
+
+---
+
+# [Proměnné](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
 
 - Proměnné deklarujeme pomocí klíčových slovíček **let** nebo **const**, datové typy nepíšeme
   - **let** vytváří měnitelnou proměnnou
@@ -47,7 +62,8 @@ Deklarace proměnné je její vytvoření, před použitím ji musíme deklarova
 
 ---
 
-# Datové typy
+# [Datové typy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+Datové typy v js nezapisujeme a nejsou pro proměnné pevné.
 
 - **String**
   - nemáme chary
@@ -61,7 +77,7 @@ Deklarace proměnné je její vytvoření, před použitím ji musíme deklarova
 
 ---
 
-# Práce s hodnotami - operátory
+# [Práce s hodnotami - operátory](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#arithmetic_operators)
 
 <pen name="qBoYKqm"/>
 
@@ -69,13 +85,13 @@ Pozor na tolerantnost k chybám, js nám umožňuje např. dělit string čísle
 
 ---
 
-# Stringy a interpolace
+# [Stringy a interpolace](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings)
 
 <pen name="zYWjaPo"/>
 
 ---
 
-# Parsování
+# [Parsování](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
 
 <pen name="JjLvBmx"/>
 
@@ -83,7 +99,7 @@ Pozor na tolerantnost k chybám, js nám umožňuje např. dělit string čísle
 
 ---
 
-# Funkcionality jenom na webu
+# [Funkcionality jenom na webu](https://developer.mozilla.org/en-US/docs/Web/API/Window#methods)
 
 <pen name="bGvMjPW" clickToLoad="true" />
 
@@ -99,20 +115,20 @@ V praxi se moc nepoužívají, protože se nedají stylovat, ale nám budou zat�
 
 ---
 
-# Práce se stringy
+# [Práce se stringy](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods)
 
 <pen name="ZExoMRZ" />
 
 
 ---
 
-# Matematické utility
+# [Matematické utility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 
 <pen name="zYWjJXx" />
 
 ---
 
-# Scope
+# [Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
 
 Proměnné v JavaScriptu (stejně jako v Javě) existují (a jsou přístupné) pouze ze stejných nebo vnitřních složených závorek
 
@@ -120,76 +136,76 @@ Proměnné v JavaScriptu (stejně jako v Javě) existují (a jsou přístupné) 
 
 ---
 
-# Podmínky
+# [Podmínky](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
 
 --- 
 
-# Neočekávané chování
+# [Neočekávané chování](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 
 ---
 
-# Cykly
+# [Cykly](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)
 
 ---
 
-# Pole
+# [Pole](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
 
 ---
 
-# Cykly II - for..in, for..of
+# [Cykly II - for..in, for..of](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code#looping_through_a_collection)
 
 ---
 
-# Object - Slovník
+# [Object - Slovník](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
 
 ---
 
-# Funkce
+# [Funkce](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
 
 ---
 
-# Moduly a import/export
+# [Moduly a import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)/[export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
 
 ---
 
-# JSDoc
+# [JSDoc](https://jsdoc.app/tags-returns.html)
 
 ---
 
-# Arrow funkce
+# [Arrow funkce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 ---
 layout: fact
 ---
 
-# OOP
+# [OOP](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 ---
 
-# Třídy
+# [Třídy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 ---
 
-# Atributy
+# [Atributy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#field_declarations)
 
 CanIUse
 
 ---
 
-# Metody
+# [Metody](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#prototype_methods)
 
 ---
 
-# Privátní atributy/metody
+# [Privátní atributy/metody](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields)
 
 ---
 
-# Gettery a settery
+# [Gettery](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) a [settery](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set)
 
 ---
 
-# Statika
+# [Statika](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#static_methods_and_properties)
 
 ---
 layout: center

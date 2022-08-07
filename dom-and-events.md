@@ -55,7 +55,7 @@ value, validity, files
 
 ---
 
-# Eventy a Event loop
+# [Eventy a Event loop](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 
 ---
 
