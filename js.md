@@ -166,6 +166,13 @@ title: Podmínky
 
 # [Podmínky](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
 
+
+---
+hideInToc: true
+---
+
+# [Porovnávací](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#comparison_operators) a [slučovací operátory](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#logical_operators_and_or_and_not)
+
 ---
 hideInToc: true
 ---
