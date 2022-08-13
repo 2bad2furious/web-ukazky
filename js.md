@@ -71,6 +71,7 @@ hideInToc: true
 
 # [Proměnné](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
 
+- Proměnné jsou pojmenovavé místo v paměti, kam ukládáme hodnotu.
 - Proměnné deklarujeme pomocí klíčových slovíček **let** nebo **const**, datové typy nepíšeme
   - **let** vytváří měnitelnou proměnnou
   - **const** vytváří neměnitelnou proměnnou
@@ -166,6 +167,18 @@ title: Podmínky
 
 # [Podmínky](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
 
+- Podmínky slouží k větvení programu
+- Provádí kus kódu, pokud platí logický výraz
+
+<pen name="xxWJMoR"/>
+
+---
+hideInToc: true
+---
+
+# Podmínky - else
+
+<pen name="OJvwqPB"/>
 
 ---
 hideInToc: true

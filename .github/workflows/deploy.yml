@@ -16,6 +16,10 @@ jobs:
         run: npm run build:css
       - name: Build JS
         run: npm run build:js
+      - name: Build Responsivity
+        run: npm run build:responsivity
+      - name: Build Flexbox
+        run: npm run build:flexbox
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
         with:

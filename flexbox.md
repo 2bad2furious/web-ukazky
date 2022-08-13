@@ -8,11 +8,26 @@ selectable: true
 
 penDefaultLang: html,result
 
+hideInToc: true
+
 ---
 
 # Flexbox
 
 ---
+layout: two-cols
+class: flex items-center justify-between
+hideInToc: true
+---
+
+# Obsah
+
+::right::
+
+<Toc columns="1" maxDepth="1" listClass="underline" />
+
+---
+
 
 # Problém
 
@@ -29,24 +44,28 @@ penDefaultLang: html,result
 
 ---
 
-# Parent - primární osa
+# Vlastnosti parenta - primární osa
 
 - justify-content
 
 ---
 
-# Parent - sekundární osa
+# Vlastnosti parenta - sekundární osa
 
 - align-items
 - align-content
 
 --- 
 
-# Parent - gap
+# Vlastnosti parenta - gap
+
+- gap
+- column-gap
+- row-gap
 
 ---
 
-# Prvek
+# Vlastnosti prvku
 
 - flex-basis, shrink, grow
 - order
