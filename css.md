@@ -181,7 +181,7 @@ Alespoň ty hlavní
 - **text**
   - **text-align** (zarovnání textu, např. **start**, **left**, **center**, **end**, **right**, **justify**)<sup>(3)</sup>
   - **text-decoration** (dekorace textu, např. **none**, **underline**, **line-through**)
-- **line-width** (výška řádku, většinou v poměru k velikosti písma (např. **1.2**))
+- **line-height** (výška řádku, většinou v poměru k velikosti písma (např. **1.2**))
 
 <div class="flex-grow"></div>
 
