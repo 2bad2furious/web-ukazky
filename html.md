@@ -47,7 +47,7 @@ title: Co je to HTML?
 # Rozdělení tagů
 
 - Dle párovosti
-- Dle významnosti
+- Dle významu
     - Některé prvky jsou pouze stylovací nebo úplně bez významu- např. **b, i, div**
     - Některé prvky mají naopak hlubší význam - např. **strong, em, article**
 - Podle blokování řádku
