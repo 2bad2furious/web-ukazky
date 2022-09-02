@@ -188,7 +188,7 @@ hideInToc: true
 - Inputy mají mnoho [typů](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) :
     - např. **text** (defaultní), **number**, **email**, **password**, **file**, **submit** (tlačítko pro odeslání), ...
 - U buttonů máme více [typů](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type):
-    - **submit** (defaultní ve formuláři), **button** (ten neodešle neodešle) a **reset**
+    - **submit** (defaultní ve formuláři), **button** (ten neodešle) a **reset**
 - Na formulářových prvcích lze vyjádřit [validační pravidla](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) pomocí atributů
     - **min**, **max**, **required**, **type** (např. **email**), **maxlength**, **minlength**
     - existuje také **pattern** (kde zadáte RegEx), ale ten po vás chtít nebudu :)
