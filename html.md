@@ -221,3 +221,13 @@ hideInToc: true
 
 <iframe src="https://www.itnetwork.cz/html-css/html5/html-manual/html-5-abecedni-rejstrik-tagu" class="flex-grow"></iframe>
 
+---
+title: Entity
+---
+
+# [Entity](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
+
+- některé znaky jsou vyhrazené a primárně jsou chápány jako syntaxe HTML
+
+<pen name="GRdRwpm" />
+
