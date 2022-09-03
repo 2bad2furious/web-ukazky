@@ -9,12 +9,14 @@
     "build:responsivity": "rm -rf docs/responsivity && slidev build responsivity.md -o docs/responsivity --base /web-ukazky/responsivity/",
     "build:js": "rm -rf docs/js && slidev build js.md -o docs/js --base /web-ukazky/js/",
     "build:dom-and-events": "rm -rf docs/dom-and-events && slidev build dom-and-events.md -o docs/dom-and-events --base /web-ukazky/dom-and-events/",
+    "build:zkratky": "rm -rf docs/zkratky && slidev build zkratky.md -o docs/zkratky --base /web-ukazky/zkratky/",
     "dev:html": "slidev html.md --open",
     "dev:css": "slidev css.md --open",
     "dev:responsivity": "slidev responsivity.md --open",
     "dev:flexbox": "slidev flexbox.md --open",
     "dev:js": "slidev js.md --open",
     "dev:dom-and-events": "slidev dom-and-events.md --open",
+    "dev:zkratky": "slidev zkratky.md --open",
     "export": "slidev export"
   },
   "dependencies": {
