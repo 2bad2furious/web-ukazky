@@ -30,6 +30,7 @@ hideInToc: true
   ```html
   <div class="a" id="b" c="d"></div>
   ```
+- **loremčíslo** + **Tabulátor** - vytvoří text lorem ipsum (bezvýznamný text s počtem slov dle vybraného čísla)
 
 ---
 
