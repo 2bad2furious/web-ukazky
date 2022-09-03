@@ -183,6 +183,7 @@ hideInToc: true
 
 - U políček lze také:
     - nastavovat hodnotu pomocí atributu **value**, u **textarea** se hodnota vkládá dovnitř
+    - nastavovat nápovědu, pokud uživatel nic nevyplnil, pomocí **placeholder**
     - zabránit zadávání pomocí atributu **disabled**, lze také nastavit na **fieldset** pro všechna políčka najednou
     - specifikovat [**name**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#name) atribut, pod kterým se data budou posílat (hlavně u SSR nebo form. knihoven)
 - Inputy mají mnoho [typů](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) :
