@@ -213,7 +213,7 @@ Alespoň ty hlavní hodnoty
 - **block** nastaví element jako blokový - vyhradí si celý řádek)
 - **inline** (nastaví element jako řádkový - vyhradí si pouze potřebné místo)
 - **inline-block** (kombinace **inline** a **block**, vyhradí si jen potřebné místo, ale:
-  - může mít např. **width** a **width**
+  - může mít např. **width** a **height**
   - a vertikální **margin**/**padding** se chová "normálně")
 - **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)
 - **grid** (skládání vnitřních prvků do virtuálních boxů)
@@ -247,8 +247,8 @@ hideInToc: true
   - **margin-left**, **margin-top**, **margin-right**, **margin-bottom**
   - často se hodí udávat v hodnotách relativních k **font-size** nebo **auto** pro zabrání co nejvíce místa
 - **box-sizing**
-  - **content-box** (default, **width**/**width** nastavuje jenom **obsah**)
-  - **border-box** (**width**/**width** nastavuje **obsah** + **padding** + **border**)
+  - **content-box** (default, **width**/**height** nastavuje jenom **obsah**)
+  - **border-box** (**width**/**height** nastavuje **obsah** + **padding** + **border**)
 
 <div class="flex-grow"></div>
 <footer class="flex gap-2">

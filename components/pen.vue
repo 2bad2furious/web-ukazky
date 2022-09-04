@@ -1,9 +1,9 @@
 <template>
-    <iframe :height="height" style="width: 100%;" scrolling="no" ref="frame"
-            :src="url" frameborder="no" :loading="loading" class="flex-grow"
-            allowtransparency="true" allowfullscreen="true">
-      See the Pen <a :href="'https://codepen.io/'  + author + '/pen/' + name">Here</a>
-    </iframe>
+  <iframe :height="height" style="width: 100%;" scrolling="no" ref="frame"
+          :src="url" frameborder="no" :loading="loading" class="flex-grow"
+          allowtransparency="true" allowfullscreen="true">
+    See the Pen <a :href="'https://codepen.io/'  + author + '/pen/' + name">Here</a>
+  </iframe>
 </template>
 
 <script lang="ts">
@@ -35,7 +35,6 @@ export default {
     },
     theme: {
       type: String,
-      default: 'default'
     },
     height: {
       type: Object,
@@ -46,10 +45,35 @@ export default {
       default: 'eager'
     }
   },
+  data() {
+    const checkIsDarkTheme = () => document.documentElement.classList.contains('dark');
+    const mutationObserver = new MutationObserver(e => {
+      const isDarkTheme = checkIsDarkTheme();
+      if(isDarkTheme !== this.isDarkTheme){
+        this.isDarkTheme = isDarkTheme;
+      }
+    });
+    mutationObserver.observe(document.documentElement, {attributeFilter: ['class']});
+    return {
+      isDarkTheme: checkIsDarkTheme(),
+      mutationObserver
+    }
+  },
+  unmounted() {
+    this.mutationObserver.disconnect();
+  },
   inject: {
     "$slidev": slidevContext
   },
   computed: {
+    calculatedTheme(): string | 'default' {
+      if (this.theme) {
+        return this.theme;
+      }
+      if (this.isDarkTheme)
+        return 'dark';
+      return 'light';
+    },
     url(): string {
       return 'https://codepen.io/' + this.author + '/embed/' + (this.clickToLoad ? 'preview/' : '') + this.name + '?' + this.queryParams;
     },
@@ -61,8 +85,9 @@ export default {
       const qp = new URLSearchParams();
       qp.append('default-tab', this.defaultLang ?? this.globalDefaultLang);
       qp.append('editable', this.editable ? 'true' : 'false');
-      if (this.theme !== 'default')
-        qp.append('theme-id', this.theme);
+      const calculatedTheme = this.calculatedTheme;
+      if (calculatedTheme !== 'default')
+        qp.append('theme-id', calculatedTheme);
       return qp.toString();
     }
   }
