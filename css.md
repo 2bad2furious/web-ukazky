@@ -83,12 +83,22 @@ Seřazeno dle priority od nejnižší po nejvyšší
   - zde nepíšeme selektory
 
 ---
+title: Pseudo třídy a elementy
+---
+
+# [Pseudo třídy](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+- platí, pokud je element v nějakém stavu, zapisujeme za :
+  
+<pen name="rNdMJQK" />
+
+---
 hideInToc: true
 ---
 
-# Pseudo [třídy](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) a [elementy](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
-  
-<pen name="rNdMJQK" />
+# [Pseudo elementy](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+- upravujeme část elementů, zapisujeme za dvěma ::
+
+<pen name="ExLygXG" />
 
 ---
 hideInToc: true
@@ -102,6 +112,7 @@ Alespoň ty nejčastější
 - **@font-face** - deklarace písma pro aplikaci
 - **@keyframes** - deklarace animací
 - **@media** - aplikuje vložené styly pouze za nějaké podmínky, např. dle rozlišení či místa zobrazení
+- **@supports** - aplikuje vložené styly, pouze pokud je/není podporovaná určitá funkcionalita 
 
 <div class="flex-grow"/>
 
@@ -333,6 +344,25 @@ title: Position
 <pen name="qBomjxM" />
 
 <!-- TODO sticky description -->
+
+---
+title: Seznamy a tabulky
+---
+
+# Seznamy
+
+- **list-style** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style) pro zkrácený zápis)
+  - **list-style-type** (značka prvku, **none**/**square**/**decimal**/**disc**/...)
+  - **list-style-position** (pozice značky prvku - **inside**/**outside**, defualtní hodnota je outside)
+  - **list-style-image** (obrázek místo defaultní značky)
+
+<pen name="YzLWWRg"/>
+
+---
+
+# Tabulky
+
+<pen name="JjvKKVa"/>
 
 ---
 hideInToc: true
