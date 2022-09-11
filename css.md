@@ -382,12 +382,6 @@ hideInToc: true
   - **transition-timing-function** ([křivka přechodu](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function), např. **linear** nebo **ease-in**)
   - **transition-delay** (zpoždění animace, stejná syntax jako **transition-duration**)
 
----
-hideInToc: true
----
-
-# Přechody
-
 <pen name="GRxdxbZ"/>
 
 ---
