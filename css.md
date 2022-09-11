@@ -442,4 +442,4 @@ title: Prefixing
 
 <div class="flex-grow"/>
 
-Dnes už se z více důvodu prefixy moc do prohlížečů nepřidávají. Prefixing pro nás v praxi něco dělá automaticky.
+Dnes už se z více důvodů prefixy moc do prohlížečů nepřidávají. Prefixing pro nás pak v praxi něco dělá automaticky.
