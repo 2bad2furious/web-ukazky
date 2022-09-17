@@ -228,7 +228,7 @@ hideInToc: true
 
 <pen name="xxjqYGj"/>
 
-Vlastnosti **background** a **background-color** zatím pro naše účely fungují stejně, **background** toho však umí
+Vlastnosti **background** a **background-color** zatím pro naše účely fungují stejně, **background** však umí
 nastavovat i víc než jen barvu, ale o tom později.
 
 ---
