@@ -442,7 +442,8 @@ hideInToc: true
 
 - naše pojmenovaná animace
 - v **@keyframes** deklarujeme, jaké styly se mají použít v jakém snímku animace
-  - snímky jsou buď v procentech nebo **from**/**to**, můžeme také dělat stejné styly pro více snímků (spojíme čárkou)
+  - snímky jsou buď v procentech nebo **from**/**to**
+  - můžeme také dělat stejné styly pro více snímků (spojíme čárkou)
 - používáme vlastností **animation** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) pro zkrácený
   zápis)
   - **animation-name** (název naší animace)
