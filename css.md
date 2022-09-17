@@ -373,6 +373,8 @@ title: Seznamy a tabulky
 <pen name="YzLWWRg"/>
 
 ---
+hideInToc: true
+---
 
 # Tabulky
 
@@ -407,7 +409,7 @@ hideInToc: true
 
 ---
 
-# Přechody
+# Přechody a animace
 
 - **transition** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) pro zkrácený zápis)
     - **transition-property** (vlastnosti, kterou chceme "animovat", např. **background** nebo **all**)
@@ -433,7 +435,7 @@ nejsou všechny, ale např. tyto jsou:
 - **margin**, **padding**
 
 ---
-title: Keyframes a animation
+hideInToc: true
 ---
 
 # [@Keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) a [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
@@ -452,6 +454,16 @@ title: Keyframes a animation
   - **animation-play-state** (pozastavení/spuštění animace)
   - **animation-fill-mode** (nastavení, jaké styly si má element ponechat po průběhu animace, např. **none**, **forwards** (ty z posl. _snímku_), **backwards** (ty z prvního _snímku_))
 
+---
+hideInToc: true
+---
+
+# Animace
+
+<pen name="LYmWJwr"/>
+
+---
+title: Gradienty
 ---
 
 # [Linear gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient)
