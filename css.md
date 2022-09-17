@@ -33,6 +33,8 @@ layout: center
 - **C**ascading **S**tyle **S**heets
 - Jazyk pro stylování (primárně) HTML
 - Umožňuje nám přidávat styly prvkům na stránce pomocí vlastností a jejich hodnot
+- K jeho správnému používání je nutná znalost HTML (co je element, atribut, potomek, předek, atd.) a základní principy
+  fungování WEBU
 
 ---
 hideInToc: true
@@ -41,7 +43,7 @@ hideInToc: true
 # Základní koncepty I
 
 - Vybíráme prvky na stránce (pomocí **selektoru**)
-  - těm měníme hodnoty **vlastností**
+    - těm měníme hodnoty **vlastností**
 
 <pen name="abYZvqN" defaultLang="html,css"/>
 
@@ -60,12 +62,14 @@ hideInToc: true
 # Základní koncepty II
 
 - Jednotlivá pravidla mají různou [specificitu](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
-  - pravidla s vyšší specificitou mají přednost
-  - id > class > název tagu > * 
-- Některé vlastnosti se [dědí](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance), tzn. platí i pro vnořené prvky
-- Podle toho, [kde se nachází](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) (viz další slide), mají také různou důležitost
-  - Pravidla definovaná později mají větší
-  - pomocí **!important** můžeme také zvýšit důležitost
+    - pravidla s vyšší specificitou mají přednost
+    - id > class > název tagu > *
+- Některé vlastnosti se [dědí](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance), tzn. platí i pro vnořené
+  prvky
+- Podle toho, [kde se nachází](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) (viz další slide), mají také
+  různou důležitost
+    - Pravidla definovaná později mají větší
+    - pomocí **!important** můžeme také zvýšit důležitost
 
 <pen name="GRxqoBa"/>
 
@@ -76,19 +80,21 @@ hideInToc: true
 # [Kde všude jsou/lze psát styly?](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
 
 Seřazeno dle priority od nejnižší po nejvyšší
+
 - nějaké styly už mají prohlížeče
 - uživatel si může nějaké styly změnit např. pomocí extensions
 - &lt;style> element v hlavičce dokumentu a &lt;link href="**cesta k souboru**" rel="stylesheet"> v hlavičce
 - atribut **style** přímo na prvku
-  - zde nepíšeme selektory
+    - zde nepíšeme selektory
 
 ---
 title: Pseudo třídy a elementy
 ---
 
 # [Pseudo třídy](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+
 - platí, pokud je element v nějakém stavu, zapisujeme za :
-  
+
 <pen name="rNdMJQK" />
 
 ---
@@ -96,6 +102,7 @@ hideInToc: true
 ---
 
 # [Pseudo elementy](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+
 - upravujeme část elementů, zapisujeme za dvěma ::
 
 <pen name="ExLygXG" />
@@ -112,7 +119,7 @@ Alespoň ty nejčastější
 - **@font-face** - deklarace písma pro aplikaci
 - **@keyframes** - deklarace animací
 - **@media** - aplikuje vložené styly pouze za nějaké podmínky, např. dle rozlišení či místa zobrazení
-- **@supports** - aplikuje vložené styly, pouze pokud je/není podporovaná určitá funkcionalita 
+- **@supports** - aplikuje vložené styly, pouze pokud je/není podporovaná určitá funkcionalita
 
 <div class="flex-grow"/>
 
@@ -131,7 +138,7 @@ hideInToc: true
 
 <div class="flex-grow"/>
 
-Jestli je musíte použít, pravděpodobně jste už udělali chybu někde jinde. 
+Jestli je musíte použít, pravděpodobně jste už udělali chybu někde jinde.
 
 ---
 hideInToc: true
@@ -162,15 +169,15 @@ title: Velikosti
 Alespoň ty hlavní
 
 - **absolutní**
-  - **px** (většinou ekvivalentní k 1 px na obrazovce)
+    - **px** (většinou ekvivalentní k 1 px na obrazovce)
 - **relativní k velikosti písma**
-  - **em** (velikost písma daného elementu)
-  - **rem** (velikost písma kořenového elementu)
+    - **em** (velikost písma daného elementu)
+    - **rem** (velikost písma kořenového elementu)
 - **relativní k velikosti okna**
-  - **vh** (1 % výšky okna)
-  - **vw** (1 % šířky okna)
+    - **vh** (1 % výšky okna)
+    - **vw** (1 % šířky okna)
 - **relativní k velikosti rodiče**
-  - **%** (1 % šířky rodiče)
+    - **%** (1 % šířky rodiče)
 
 <div class="flex-grow"></div>
 
@@ -186,12 +193,14 @@ Alespoň ty hlavní
 
 - **color** (barva písma)
 - **font** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/font) pro aplikování následujících)
-  - **font-family** (název písma, resp. názvy oddělené čárkou, použije se první dostupné)<sup>(1)</sup>
-  - **font-size** (velikost písma, většinou v **em**, **rem**)
-  - **font-weight** (tloušťka písma, **1-1000**<sup>(2)</sup> nebo **lighter**, **light**, **normal**, **bold**, **bolder**)
+    - **font-family** (název písma, resp. názvy oddělené čárkou, použije se první dostupné)<sup>(1)</sup>
+    - **font-size** (velikost písma, většinou v **em**, **rem**)
+    - **font-weight** (tloušťka písma, **1-1000**<sup>(2)</sup> nebo **lighter**, **light**, **normal**, **bold**, **
+      bolder**)
 - **text**
-  - **text-align** (zarovnání textu, např. **start**, **left**, **center**, **end**, **right**, **justify**)<sup>(3)</sup>
-  - **text-decoration** (dekorace textu, např. **none**, **underline**, **line-through**)
+    - **text-align** (zarovnání textu, např. **start**, **left**, **center**, **end**, **right**, **justify**)<sup>(
+      3)</sup>
+    - **text-decoration** (dekorace textu, např. **none**, **underline**, **line-through**)
 - **line-height** (výška řádku, většinou v poměru k velikosti písma (např. **1.2**))
 
 <div class="flex-grow"></div>
@@ -212,30 +221,15 @@ hideInToc: true
 
 
 ---
-title: Display
----
 
+# Pozadí
 
-# [Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+- **background-color** (barva pozadí)
 
-Alespoň ty hlavní hodnoty
+<pen name="xxjqYGj"/>
 
-- **none** (schová element)
-- **block** nastaví element jako blokový - vyhradí si celý řádek)
-- **inline** (nastaví element jako řádkový - vyhradí si pouze potřebné místo)
-- **inline-block** (kombinace **inline** a **block**, vyhradí si jen potřebné místo, ale:
-  - může mít např. **width** a **height**
-  - a vertikální **margin**/**padding** se chová "normálně")
-- **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)
-- **grid** (skládání vnitřních prvků do virtuálních boxů)
-
----
-hideInToc: true
----
-
-# Display
-
-<pen name="WNzjjJW" />
+Vlastnosti **background** a **background-color** zatím pro naše účely fungují stejně, **background** toho však umí
+nastavovat i víc než jen barvu, ale o tom později.
 
 ---
 
@@ -252,21 +246,11 @@ hideInToc: true
 # [Boxmodel](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
 
 - **padding** (vnitřní spacing, vlastnost pro zkrácený zápis)
-  - **padding-left**, **padding-top**, **padding-right**, **padding-bottom**
-  - často se hodí udávat v hodnotách relativních k **font-size**
+    - **padding-left**, **padding-top**, **padding-right**, **padding-bottom**
+    - často se hodí udávat v hodnotách relativních k **font-size**
 - **margin** (vnější spacing, vlastnost pro zkrácený zápis)
-  - **margin-left**, **margin-top**, **margin-right**, **margin-bottom**
-  - často se hodí udávat v hodnotách relativních k **font-size** nebo **auto** pro zabrání co nejvíce místa
-- **box-sizing**
-  - **content-box** (default, **width**/**height** nastavuje jenom **obsah**)
-  - **border-box** (**width**/**height** nastavuje **obsah** + **padding** + **border**)
-
-<div class="flex-grow"></div>
-<footer class="flex gap-2">
-<sup>(1)</sup> <div>Viditelný box je box <strong>bez marginu</strong>, tedy <strong>box-sizing: border-box</strong><br>
-U inline elementů width a width nebude fungovat
-</div>
-</footer>
+    - **margin-left**, **margin-top**, **margin-right**, **margin-bottom**
+    - často se hodí udávat v hodnotách relativních k **font-size** nebo **auto** pro zabrání co nejvíce místa
 
 ---
 hideInToc: true
@@ -276,7 +260,15 @@ hideInToc: true
 
 - **height**, **min-height**, **max-height** (výška, minimální výška a maximální výška)
 - **width**, **min-width**, **max-width** (šírka, minimální šířka a maximální šířka)
-- hodnoty lze nastavovat ve velikostních jednotkách nebo **auto** (prohlížeč vybere hodnotu)
+    - hodnoty lze nastavovat ve velikostních jednotkách nebo **auto** (prohlížeč vybere hodnotu)
+- **box-sizing**
+    - **content-box** (default, **width**/**height** nastavuje jenom **obsah**)
+    - **border-box** (**width**/**height** nastavuje **obsah** + **padding** + **border**)
+
+<div class="flex-grow"></div>
+<footer class="flex gap-2">
+U <strong>inline</strong> elementů width a height nebude fungovat
+</footer>
 
 ---
 hideInToc: true
@@ -285,9 +277,9 @@ hideInToc: true
 # Boxmodel - border
 
 - **border** (rámeček, vlastnost pro zkrácený zápis)
-  - **border-width** (velikost rámečku), **border-color** (barva rámečku)
-  - **border-style** (styl rámečku, lze stylovat i na jednotlivé strany, **solid**, **none**, **dotted**, **dashed**)
-  - **border-radius** (zaoblení rohů, lze stylovat i jednotlivé rohy, hodnoty jsou klasické velikosti)
+    - **border-width** (velikost rámečku), **border-color** (barva rámečku)
+    - **border-style** (styl rámečku, lze stylovat i na jednotlivé strany, **solid**, **none**, **dotted**, **dashed**)
+    - **border-radius** (zaoblení rohů, lze stylovat i jednotlivé rohy, hodnoty jsou klasické velikosti)
 
 <pen name="yLKgaNQ" />
 
@@ -302,16 +294,43 @@ hideInToc: true
 <pen name="zYWNBjy" />
 
 ---
+title: Display
+---
 
-# Pozadí
+# [Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+
+Alespoň ty hlavní hodnoty
+
+- **none** (schová element)
+- **block** nastaví element jako blokový - vyhradí si celý řádek)
+- **inline** (nastaví element jako řádkový - vyhradí si pouze potřebné místo)
+- **inline-block** (kombinace **inline** a **block**, vyhradí si jen potřebné místo, ale:
+  - může mít např. **width** a **height**
+  - a vertikální **margin**/**padding** se chová "normálně")
+- **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)(1)
+- **grid** (skládání vnitřních prvků do virtuálních boxů)(1)
+
+<div class="flex-grow"></div>
+(1) Nemusíte si zatím pamatovat.
+
+---
+hideInToc: true
+---
+
+# Display
+
+<pen name="WNzjjJW" />
+
+---
+
+# Pozadí 2
 
 - **background** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/background) na zkrácený zápis)
-  - **background-color** (barva pozadí)
-  - **background-image** (obrázek na pozadí, lze zadávat **url(adresa)**) <sup>(1)</sup>
-  - **background-repeat** (opakování pozadí)
-  - **background-attachment** (propojení pozadí s oknem nebo se skrolováním, např. **fixed**, **local**, **scroll**)
-  - **background-size** (velikost pozadí, např. **contain**, **cover**, **50%** nebo **200px**)
-  - **background-position** (pozice pozadí)
+    - **background-image** (obrázek na pozadí, lze zadávat **url(adresa)**) <sup>(1)</sup>
+    - **background-repeat** (opakování pozadí)
+    - **background-attachment** (propojení pozadí s oknem nebo se skrolováním, např. **fixed**, **local**, **scroll**)
+    - **background-size** (velikost pozadí, např. **contain**, **cover**, **50%** nebo **200px**)
+    - **background-position** (pozice pozadí)
 
 <div class="flex-grow"></div>
 <footer>
@@ -322,7 +341,7 @@ hideInToc: true
 hideInToc: true
 ---
 
-# Pozadí
+# Pozadí 2
 
 <pen name="ZExLMeZ" />
 
@@ -337,9 +356,9 @@ title: Position
 - **fixed** (umožňuje element pozicovat absolutně v okně)
 - **sticky** (umožňuje elementu zůstat viditelný co nejdéle to jde)
 - **absolute** (umožňuje element pozicovat absolutně v jeho *containing-block*)
-  - [*containing-block*](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) je buď **body** nebo nejbližší předek s pozicí jinou než **static**
-- vlastností **z-index** nastavíme, který element překrývá který (vyšší hodnota překrývá nižší) 
-
+    - [*containing-block*](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) je buď **body** nebo
+      nejbližší předek s pozicí jinou než **static**
+- vlastností **z-index** nastavíme, který element překrývá který (vyšší hodnota překrývá nižší)
 
 <pen name="qBomjxM" />
 
@@ -352,9 +371,9 @@ title: Seznamy a tabulky
 # Seznamy
 
 - **list-style** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style) pro zkrácený zápis)
-  - **list-style-type** (značka prvku, **none**/**square**/**decimal**/**disc**/...)
-  - **list-style-position** (pozice značky prvku - **inside**/**outside**, defualtní hodnota je outside)
-  - **list-style-image** (obrázek místo defaultní značky)
+    - **list-style-type** (značka prvku, **none**/**square**/**decimal**/**disc**/...)
+    - **list-style-position** (pozice značky prvku - **inside**/**outside**, defualtní hodnota je outside)
+    - **list-style-image** (obrázek místo defaultní značky)
 
 <pen name="YzLWWRg"/>
 
@@ -377,10 +396,12 @@ hideInToc: true
 # Přechody
 
 - **transition** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) pro zkrácený zápis)
-  - **transition-property** (vlastnosti, kterou chceme "animovat", např. **background** nebo **all**)
-  - **transition-duration** (délka přechodu, zadáváme hodnotu s časovou jednotkou, např. **250ms** nebo **.25s**)
-  - **transition-timing-function** ([křivka přechodu](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function), např. **linear** nebo **ease-in**)
-  - **transition-delay** (zpoždění animace, stejná syntax jako **transition-duration**)
+    - **transition-property** (vlastnosti, kterou chceme "animovat", např. **background** nebo **all**)
+    - **transition-duration** (délka přechodu, zadáváme hodnotu s časovou jednotkou, např. **250ms** nebo **.25s**)
+    - **
+      transition-timing-function** ([křivka přechodu](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function),
+      např. **linear** nebo **ease-in**)
+    - **transition-delay** (zpoždění animace, stejná syntax jako **transition-duration**)
 
 <pen name="GRxdxbZ"/>
 
@@ -397,15 +418,41 @@ nejsou všechny, ale např. tyto jsou:
 - **top**, **bottom**, **left**, **right**
 - **margin**, **padding**
 
---- 
+---
+title: Keyframes a animation
+---
+
+# [@Keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) a [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+
+- naše pojmenovaná animace
+- deklarujeme, jaké styly se mají použít v jaké části animace
+- používáme vlastností animation ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) pro zkrácený
+  zápis)
+    - animation-name
+    - animation-duration
+    - animation-timing-function
+    - animation-iteration-count
+    - animation-delay
+    - animation-direction
+    - animation-play-state
+    - animation-fill-mode
+
+---
+
+# [Linear gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient)
+
+Také existují [radial-gradienty](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient).
+
+---
 
 # Další vlastnosti
 
 - **cursor** (změní styl kurzoru po dobu najetí na element)
 - **opacity** (změní průhlednost elementu)
-- **box-shadow** (nastaví stín elementu)
-- **animation** (využije **@keyframe** animaci s přesnější definicí průběhu)
+- **box-shadow** (nastaví stín elementu, hodnoty jsou složitější, častou
+  používáme [generátory](https://www.cssmatic.com/box-shadow))
 - **transform** (umožňuje měnit zobrazení, např. zvětšení, rotace, posunutí podobně jako **display:absolute**)
+- **visibility** (umožňuje schovat element, ale stále bude na stránce, klikatelný, atd. **hidden**/**visible**)
 
 ---
 hideInToc: true
