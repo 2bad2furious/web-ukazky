@@ -88,6 +88,18 @@ Seřazeno dle priority od nejnižší po nejvyšší
     - zde nepíšeme selektory
 
 ---
+hideInToc: true
+---
+
+# [Debugování v prohlížeči](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
+
+<div style="background: url('https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS/inspecting1.png') no-repeat; background-size: contain" class="flex-grow"/>
+
+[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS/inspecting1.png](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS/inspecting1.png)
+
+Dev console v prohlížeči nám může pomoci zjistit, jaké styly se aplikují, kde jsou definovány, a mnoho dalšího.
+
+---
 title: Pseudo třídy a elementy
 ---
 
@@ -141,16 +153,18 @@ hideInToc: true
 Jestli je musíte použít, pravděpodobně jste už udělali chybu někde jinde.
 
 ---
+title: Funkce
 hideInToc: true
 ---
 
-# [Debugování v prohlížeči](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
+# [Funkce](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
 
-<div style="background: url('https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS/inspecting1.png') no-repeat; background-size: contain" class="flex-grow"/>
+složitější hodnoty
 
-[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS/inspecting1.png](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS/inspecting1.png)
-
-Dev console v prohlížeči nám může pomoci zjistit, jaké styly se aplikují, kde jsou definovány, a mnoho dalšího.
+- **rgb()**, **rgba()** (barvy)
+- **calc()** (provádění matematických operací pro spočítání hodnoty), **min()**, **max()** (vybere extrém ze seznamu)
+- **linear-gradient()** (barevné přechody)
+- **scale**, **rotate**, **transform** (změna rozměrů/pozice prvku)
 
 ---
 title: Barvy
@@ -346,25 +360,6 @@ hideInToc: true
 <pen name="ZExLMeZ" />
 
 ---
-title: Position
----
-
-# [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
-
-- **static** (defaultní hodnota)
-- **relative** (umožňuje element posunout relativně k jeho původní pozici)
-- **fixed** (umožňuje element pozicovat absolutně v okně)
-- **sticky** (umožňuje elementu zůstat viditelný co nejdéle to jde)
-- **absolute** (umožňuje element pozicovat absolutně v jeho *containing-block*)
-    - [*containing-block*](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) je buď **body** nebo
-      nejbližší předek s pozicí jinou než **static**
-- vlastností **z-index** nastavíme, který element překrývá který (vyšší hodnota překrývá nižší)
-
-<pen name="qBomjxM" />
-
-<!-- TODO sticky description -->
-
----
 title: Seznamy a tabulky
 ---
 
@@ -382,6 +377,25 @@ title: Seznamy a tabulky
 # Tabulky
 
 <pen name="JjvKKVa"/>
+
+---
+title: Position
+---
+
+# [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+
+- **static** (defaultní hodnota)
+- **relative** (umožňuje element posunout relativně k jeho původní pozici)
+- **fixed** (umožňuje element pozicovat absolutně v okně)
+- **sticky** (umožňuje elementu zůstat viditelný co nejdéle to jde)
+- **absolute** (umožňuje element pozicovat absolutně v jeho *containing-block*)
+  - [*containing-block*](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) je buď **body** nebo
+    nejbližší předek s pozicí jinou než **static**
+- vlastností **z-index** nastavíme, který element překrývá který (vyšší hodnota překrývá nižší)
+
+<pen name="qBomjxM" />
+
+<!-- TODO sticky description -->
 
 ---
 hideInToc: true
@@ -425,23 +439,31 @@ title: Keyframes a animation
 # [@Keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) a [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
 
 - naše pojmenovaná animace
-- deklarujeme, jaké styly se mají použít v jaké části animace
-- používáme vlastností animation ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) pro zkrácený
+- v **@keyframes** deklarujeme, jaké styly se mají použít v jakém snímku animace
+  - snímky jsou buď v procentech nebo **from**/**to**, můžeme také dělat stejné styly pro více snímků (spojíme čárkou)
+- používáme vlastností **animation** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) pro zkrácený
   zápis)
-    - animation-name
-    - animation-duration
-    - animation-timing-function
-    - animation-iteration-count
-    - animation-delay
-    - animation-direction
-    - animation-play-state
-    - animation-fill-mode
+  - **animation-name** (název naší animace)
+  - **animation-duration** (délka animace v [čase](https://developer.mozilla.org/en-US/docs/Web/CSS/time), např. **.2s**)
+  - **animation-timing-function** (funkce rychlosti průběhu, např. **linear** (default), **ease**)
+  - **animation-delay** (délka prodlevy, než animace začne, udáváme v čase)
+  - **animation-iteration-count** (počet opakování animace, např. **1** (default), **2**, **infinite**)
+  - **animation-direction** (v jakém směru animace jede, např. **normal** (default), **reverse**, **alternate**)
+  - **animation-play-state** (pozastavení/spuštění animace)
+  - **animation-fill-mode** (nastavení, jaké styly si má element ponechat po průběhu animace, např. **none**, **forwards** (ty z posl. _snímku_), **backwards** (ty z prvního _snímku_))
 
 ---
 
 # [Linear gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient)
 
 Také existují [radial-gradienty](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient).
+
+- používáme místo obrázků, nejčastěji na **pozadí**
+- definujeme seznam barev, případně v jaké části má k přechodu dojít
+- lze nastavit i rotace gradientu
+- často využíváme generátorů
+
+<pen name="GRdWddw" />
 
 ---
 
