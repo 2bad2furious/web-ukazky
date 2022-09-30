@@ -269,6 +269,10 @@ hideInToc: true
     - **margin-left**, **margin-top**, **margin-right**, **margin-bottom**
     - často se hodí udávat v hodnotách relativních k **font-size** nebo **auto** pro zabrání co nejvíce místa
 
+<div class="flex-grow"></div>
+
+Pozor, marginy <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing">se občas kombinují</a>. 
+
 ---
 hideInToc: true
 ---
