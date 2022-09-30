@@ -267,7 +267,8 @@ hideInToc: true
     - často se hodí udávat v hodnotách relativních k **font-size**
 - **margin** (vnější spacing, mezera mezi krajem prvku a rodičem/sourozenci, vlastnost pro zkrácený zápis)
     - **margin-left**, **margin-top**, **margin-right**, **margin-bottom**
-    - často se hodí udávat v hodnotách relativních k **font-size** nebo **auto** pro zabrání co nejvíce místa
+    - často se hodí udávat v hodnotách relativních k **font-size** nebo **auto** pro zabrání co nejvíce místa 
+      - hodí se například k centrování
 
 <div class="flex-grow"></div>
 
