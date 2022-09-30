@@ -249,6 +249,8 @@ nastavovat i víc než jen barvu, ale o tom později.
 
 # Boxmodel
 
+Struktura každého prvku
+
 <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png" alt="Boxmodel"/>
 
 [https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png)
@@ -259,10 +261,11 @@ hideInToc: true
 
 # [Boxmodel](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
 
-- **padding** (vnitřní spacing, vlastnost pro zkrácený zápis)
+- **padding** (vnitřní spacing, mezera mezi obsahem a krajem prvku, vlastnost pro zkrácený zápis)
     - **padding-left**, **padding-top**, **padding-right**, **padding-bottom**
+    - pozor, vertikální padding se u **inline** elementů chová [_divně_](https://codepen.io/2bad2furious/pen/abGYEVV?editors=1100)
     - často se hodí udávat v hodnotách relativních k **font-size**
-- **margin** (vnější spacing, vlastnost pro zkrácený zápis)
+- **margin** (vnější spacing, mezera mezi krajem prvku a rodičem/sourozenci, vlastnost pro zkrácený zápis)
     - **margin-left**, **margin-top**, **margin-right**, **margin-bottom**
     - často se hodí udávat v hodnotách relativních k **font-size** nebo **auto** pro zabrání co nejvíce místa
 
