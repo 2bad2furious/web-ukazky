@@ -174,6 +174,8 @@ title: Barvy
 
 <pen name="yLKaKJq" />
 
+Můžeme také zadat **transparent** pro průhlednou barvu.
+
 ---
 title: Velikosti
 ---
