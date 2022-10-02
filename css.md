@@ -270,7 +270,7 @@ hideInToc: true
 - **margin** (vnější spacing, mezera mezi krajem prvku a rodičem/sourozenci, vlastnost pro zkrácený zápis)
     - **margin-left**, **margin-top**, **margin-right**, **margin-bottom**
     - často se hodí udávat v hodnotách relativních k **font-size** nebo **auto** pro zabrání co nejvíce místa 
-      - hodí se například k centrování
+      - **auto** se například k centrování, ale je potřeba, aby centrovaný element nebyl **inline** a měl pevnou šířku
 
 <div class="flex-grow"></div>
 
