@@ -271,6 +271,7 @@ hideInToc: true
     - **margin-left**, **margin-top**, **margin-right**, **margin-bottom**
     - často se hodí udávat v hodnotách relativních k **font-size** nebo **auto** pro zabrání co nejvíce místa 
       - **auto** se například k centrování, ale je potřeba, aby centrovaný element nebyl **inline** a měl pevnou šířku
+    - vertikální margin u **inline** prvků nefunguje 
 
 <div class="flex-grow"></div>
 
