@@ -318,6 +318,28 @@ hideInToc: true
 <pen name="zYWNBjy" />
 
 ---
+
+# Horizontální centrování
+
+Inline v blocku.
+
+<pen name="LYmJgjz" defaultLang="html,result" />
+
+Můžeme použít **text-align:center**
+
+---
+hideInToc: true
+---
+
+# Horizontální centrování
+
+Menší block v blocku.
+
+<pen name="xxjaypr" defaultLang="html,result" />
+
+Můžeme použít **margin auto** na **obě strany**
+
+---
 title: Display
 ---
 
