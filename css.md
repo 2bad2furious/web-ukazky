@@ -291,7 +291,8 @@ hideInToc: true
     - **content-box** (default, **width**/**height** nastavuje jenom **obsah**)
     - **border-box** (**width**/**height** nastavuje **obsah** + **padding** + **border**)
 
-<div class="flex-grow"></div>
+<pen name="eYrLwBG" />
+
 <footer class="flex gap-2">
 U <strong>inline</strong> elementů width a height nebude fungovat
 </footer>
