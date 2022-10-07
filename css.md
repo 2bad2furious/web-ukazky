@@ -167,7 +167,7 @@ složitější hodnoty
 - **scale**, **rotate**, **transform** (změna rozměrů/pozice prvku)
 
 ---
-title: Barvy
+title: Barvy a velikosti
 ---
 
 # [Barvy a jak je lze zadávat](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
@@ -177,6 +177,7 @@ title: Barvy
 Můžeme také zadat **transparent** pro průhlednou barvu.
 
 ---
+hideInToc: true
 title: Velikosti
 ---
 
