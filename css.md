@@ -356,6 +356,7 @@ Alespoň ty hlavní hodnoty
 - **inline-block** (kombinace **inline** a **block**, vyhradí si jen potřebné místo, ale:
   - může mít např. **width** a **height**
   - a vertikální **margin**/**padding** se chová "normálně")
+  - z toho důvodu většinou používáme pro možnost nastavení těchto vlastností na **defaultně inline** prvcích
 - **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)(1)
 - **grid** (skládání vnitřních prvků do virtuálních boxů)(1)
 
