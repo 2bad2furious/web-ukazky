@@ -343,7 +343,15 @@ Menší block v blocku.
 Můžeme použít **margin auto** na **obě strany**
 
 ---
-title: Seznamy a tabulky
+title: Tabulky a seznmy
+---
+
+# Stylování tabulek
+
+<pen name="JjvKKVa"/>
+
+---
+hideInToc: true
 ---
 
 # Stylování seznamů
@@ -355,13 +363,6 @@ title: Seznamy a tabulky
 
 <pen name="YzLWWRg"/>
 
----
-hideInToc: true
----
-
-# Stylování tabulek
-
-<pen name="JjvKKVa"/>
 
 ---
 title: Display
