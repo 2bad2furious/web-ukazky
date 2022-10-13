@@ -343,6 +343,27 @@ Menší block v blocku.
 Můžeme použít **margin auto** na **obě strany**
 
 ---
+title: Seznamy a tabulky
+---
+
+# Stylování seznamů
+
+- **list-style** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style) pro zkrácený zápis)
+  - **list-style-type** (značka prvku, **none**/**square**/**decimal**/**disc**/...)
+  - **list-style-position** (pozice značky prvku - **inside**/**outside**, defualtní hodnota je outside)
+  - **list-style-image** (obrázek místo defaultní značky)
+
+<pen name="YzLWWRg"/>
+
+---
+hideInToc: true
+---
+
+# Stylování tabulek
+
+<pen name="JjvKKVa"/>
+
+---
 title: Display
 ---
 
@@ -394,27 +415,6 @@ hideInToc: true
 # Pozadí 2
 
 <pen name="ZExLMeZ" />
-
----
-title: Seznamy a tabulky
----
-
-# Seznamy
-
-- **list-style** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style) pro zkrácený zápis)
-    - **list-style-type** (značka prvku, **none**/**square**/**decimal**/**disc**/...)
-    - **list-style-position** (pozice značky prvku - **inside**/**outside**, defualtní hodnota je outside)
-    - **list-style-image** (obrázek místo defaultní značky)
-
-<pen name="YzLWWRg"/>
-
----
-hideInToc: true
----
-
-# Tabulky
-
-<pen name="JjvKKVa"/>
 
 ---
 title: Position
