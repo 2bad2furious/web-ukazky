@@ -352,6 +352,25 @@ title: Tabulky a seznmy
 
 ---
 hideInToc: true
+clicks: 3
+---
+
+# [Vertikální zarovnání](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
+
+**inline** prvků a v buňkách tabulky.
+
+- **middle**, **top**, **bottom**, **sub**, **sup**
+- **baseline** (default, zarovná na spodní hranu textu okolo)
+
+Příklady: <click-links :to="[[0, 'baseline'], [1, 'sub'], [2, 'middle'], [3, 'top']]" class="mb-2 mt-3" />
+
+<pen name="jOxgWwe" v-show-on="0" />
+<pen name="QWreaVJ" v-show-on="1" />
+<pen name="LYmwegb" v-show-on="2" />
+<pen name="GRdVyYy" v-show-on="3" />
+
+---
+hideInToc: true
 ---
 
 # Stylování seznamů
@@ -381,6 +400,7 @@ Alespoň ty hlavní hodnoty
   - z toho důvodu většinou používáme pro možnost nastavení těchto vlastností na **defaultně inline** prvcích
 - **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)(1)
 - **grid** (skládání vnitřních prvků do virtuálních boxů)(1)
+- další jako table-cell, table-row, table
 
 <div class="flex-grow"></div>
 (1) Nemusíte si zatím pamatovat.
@@ -392,6 +412,13 @@ hideInToc: true
 # Display
 
 <pen name="WNzjjJW" />
+
+---
+
+# Vertikální zarování inline-block prvků
+Můžeme použít vertical-align.
+
+<pen name="vYjoLNX" />
 
 ---
 
