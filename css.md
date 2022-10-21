@@ -415,7 +415,7 @@ hideInToc: true
 
 ---
 
-# Vertikální zarování inline-block prvků
+# Vertikální zarovnání inline-block prvků
 Můžeme použít vertical-align.
 
 <pen name="vYjoLNX" />
