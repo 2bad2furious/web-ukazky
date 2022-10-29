@@ -47,11 +47,78 @@ hideInToc: true
 
 <pen name="abYZvqN" defaultLang="html,css"/>
 
+
 ---
 hideInToc: true
 ---
 
-# [Základní selektory](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+# Selektor podle názvu tagu
+Vybere všechny elementy se specifikovaným **názvem tagu** (např. p, a, h1, h2, atd.)
+
+<pen name="jOKPRaM" />
+
+
+---
+hideInToc: true
+---
+
+# Selektor podle atributu id
+
+Vybere prvek s danou hodnotou atributu **id**. Používáme #.
+
+<pen name="wvXaZXM" />
+
+---
+hideInToc: true
+---
+
+# Selektor podle třídy
+
+Vybere všechny prvky, které v atributu class obsahují danou třídu. Používáme tečku.
+
+<pen name="yLENrEX" defaultLang="html,result" />
+
+Prvek může obsahovat víc tříd oddělených mezerou.
+
+
+---
+hideInToc: true
+---
+
+# Seznam selektorů
+
+Použije dané styly pro všechny prvky odpovídající všem selektorům. Selektory oddělujeme čárkou.
+
+<pen name="xxzGezJ" />
+
+---
+hideInToc: true
+---
+
+# Kombinování selektorů - potomek v předkovi
+
+Vybere všechny potomky odpovídající danému selektoru, které mají předka s daným selektorem.
+
+
+<pen name="GRGJLBK" />
+
+---
+hideInToc: true
+---
+
+# Kombinování selektorů - dítě v rodiči
+
+Vybere všechny děti odpovídající danému selektoru, které mají rodiče s daným selektorem. 
+
+<pen name="OJEVGwV" />
+
+
+---
+hideInToc: true
+---
+
+# [Rekapitulace základních selektorů](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+Plus nějaké pokročilé
 
 <pen name="KKoMVxg" />
 
