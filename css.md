@@ -26,6 +26,7 @@ hideInToc: true
 
 ---
 layout: center
+title: Co je to CSS, Základní selektory
 ---
 
 # Co je to CSS?
@@ -168,13 +169,20 @@ Dev console v prohlížeči nám může pomoci zjistit, jaké styly se aplikují
 
 ---
 title: Pseudo třídy a elementy
+clicks: 4
 ---
 
 # [Pseudo třídy](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 
-- platí, pokud je element v nějakém stavu, zapisujeme za :
+Platí, pokud je element v nějakém stavu, zapisujeme za :
 
-<pen name="rNdMJQK" />
+Příklady: <click-links :to="[[0, 'hover'], [1, 'active a focus'], [2, 'target a visited'], [3, 'children'], [4, 'ostatní']]" class="mb-2 mt-3" />
+
+<pen name="ExRVYZr" v-show-on="0" />
+<pen name="rNKOByq" v-show-on="1" />
+<pen name="wvXKwpq" v-show-on="2" />
+<pen name="rNdMJQK" v-show-on="3" />
+<pen name="BaVoBxd" v-show-on="4" />
 
 ---
 hideInToc: true
