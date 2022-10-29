@@ -459,12 +459,12 @@ title: Display
 Alespoň ty hlavní hodnoty
 
 - **none** (schová element)
-- **block** nastaví element jako blokový - vyhradí si celý řádek)
+- **block** (nastaví element jako blokový - vyhradí si celý řádek)
 - **inline** (nastaví element jako řádkový - vyhradí si pouze potřebné místo)
-- **inline-block** (kombinace **inline** a **block**, vyhradí si jen potřebné místo, ale:
+- **inline-block** (kombinace **inline** a **block** - vyhradí si jen potřebné místo, ale:
   - může mít např. **width** a **height**
-  - a vertikální **margin**/**padding** se chová "normálně")
-  - z toho důvodu většinou používáme pro možnost nastavení těchto vlastností na **defaultně inline** prvcích
+  - a vertikální **margin**/**padding** se chová "normálně"
+  - z toho důvodu většinou používáme pro možnost nastavení těchto vlastností na **defaultně inline** prvcích)
 - **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)(1)
 - **grid** (skládání vnitřních prvků do virtuálních boxů)(1)
 - další jako table-cell, table-row, table
