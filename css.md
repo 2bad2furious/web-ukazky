@@ -316,6 +316,21 @@ Vlastnosti **background** a **background-color** zatím pro naše účely funguj
 nastavovat i víc než jen barvu, ale o tom později.
 
 ---
+hideInToc: true
+---
+
+# Rekapitulace 1
+
+Umíme tvořit základní webové stránky, které
+- mají vlastní styl textu/písma
+- mají pozadí
+
+## Co dál?
+- Jak zajistit pozadí bylo trochu širší/vyšší než text, nebo
+- dát prvkům rámeček, nebo
+- prvky oddělit větší mezerou?
+
+---
 
 # Boxmodel
 
@@ -416,6 +431,20 @@ title: Tabulky a seznmy
 # Stylování tabulek
 
 <pen name="JjvKKVa"/>
+
+---
+hideInToc: true
+---
+
+# Rekapitulace 2
+
+Umíme tvořit pokročilejší webové stránky:
+- stylujeme barvy textu, pozadí
+- umíme prvky roztáhnout, oddělovat mezerami
+
+## Co dál
+- Co ale, kdybychom chtěli tyto roztažené prvky dávat vedle sebe?
+- Jaktože můžeme dát vertikální padding/margin inputu ale ne spanu?
 
 ---
 hideInToc: true
