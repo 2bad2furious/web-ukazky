@@ -582,8 +582,7 @@ hideInToc: true
 - **transition** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) pro zkrácený zápis)
     - **transition-property** (vlastnosti, kterou chceme "animovat", např. **background** nebo **all**)
     - **transition-duration** (délka přechodu, zadáváme hodnotu s časovou jednotkou, např. **250ms** nebo **.25s**)
-    - **
-      transition-timing-function** ([křivka přechodu](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function),
+    - **transition-timing-function** ([křivka přechodu](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function),
       např. **linear** nebo **ease-in**)
     - **transition-delay** (zpoždění animace, stejná syntax jako **transition-duration**)
 
