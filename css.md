@@ -69,6 +69,8 @@ Vybere prvek s danou hodnotou atributu **id**. Používáme #.
 
 <pen name="wvXaZXM" />
 
+Pro každou hodnotu id by měl existovat jen jeden prvek. Pokud potřebujeme vybírat více elementů najednou, využijeme třídu.
+
 ---
 hideInToc: true
 ---
