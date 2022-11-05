@@ -432,7 +432,7 @@ Menší block v blocku.
 
 <pen name="xxjaypr" defaultLang="html,result" />
 
-Můžeme použít **margin auto** na **obě strany**
+Můžeme použít **margin auto** na **obě strany**, ale musíme mít **pevně nastavenou šířku**.
 
 ---
 title: Tabulky a seznmy
