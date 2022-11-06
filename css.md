@@ -504,18 +504,22 @@ Alespoň ty hlavní hodnoty
   - může mít např. **width** a **height**
   - a vertikální **margin**/**padding** se chová "normálně"
   - z toho důvodu většinou používáme pro možnost nastavení těchto vlastností na **defaultně inline** prvcích)
-- **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)(1)
-- **grid** (skládání vnitřních prvků do virtuálních boxů)(1)
-- další jako table-cell, table-row, table
+- **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)<sup>(1)</sup>
+- **grid** (skládání vnitřních prvků do virtuální tabulky)<sup>(1)</sup>
+- další jako table-cell, table-row, table<sup>(1)</sup>
 
 <div class="flex-grow"></div>
-(1) Nemusíte si zatím pamatovat.
+<footer>
+<sup>(1)</sup> místo adresy v <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/url"><strong>url</strong></a> lze používat i spoustu jiných hodnot
+</footer>
 
 ---
 hideInToc: true
 ---
 
 # Display
+
+none vs inline vs block vs inline-block
 
 <pen name="WNzjjJW" />
 
