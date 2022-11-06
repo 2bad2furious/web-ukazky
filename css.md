@@ -531,6 +531,16 @@ hideInToc: true
 
 
 ---
+hideInToc: true
+---
+
+# Stylování seznamů - proč
+
+<pen name="qBKaxrP"/>
+
+Typicky například v hlavičkách chceme používat seznam, ale prvky chceme zobrazit po svém.
+
+---
 
 # Pozadí 2
 
