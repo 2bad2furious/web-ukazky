@@ -491,6 +491,30 @@ none vs inline vs block vs inline-block
 <pen name="WNzjjJW" />
 
 ---
+hideInToc: true
+---
+
+# Stylování seznamů
+
+- **list-style** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style) pro zkrácený zápis)
+  - **list-style-type** (značka prvku, **none**/**square**/**decimal**/**disc**/...)
+  - **list-style-position** (pozice značky prvku - **inside**/**outside**, defualtní hodnota je outside)
+  - **list-style-image** (obrázek místo defaultní značky)
+
+<pen name="YzLWWRg"/>
+
+
+---
+hideInToc: true
+---
+
+# Stylování seznamů - proč
+
+<pen name="qBKaxrP"/>
+
+Typicky například v hlavičkách chceme používat seznam, ale prvky chceme zobrazit po svém.
+
+---
 
 # Vertikální zarovnání inline-block prvků
 Můžeme použít vertical-align.
@@ -515,30 +539,6 @@ Příklady: <click-links :to="[[0, 'baseline'], [1, 'sub'], [2, 'middle'], [3, '
 <pen name="QWreaVJ" v-show-on="1" />
 <pen name="LYmwegb" v-show-on="2" />
 <pen name="GRdVyYy" v-show-on="3" />
-
----
-hideInToc: true
----
-
-# Stylování seznamů
-
-- **list-style** ([vlastnost](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style) pro zkrácený zápis)
-  - **list-style-type** (značka prvku, **none**/**square**/**decimal**/**disc**/...)
-  - **list-style-position** (pozice značky prvku - **inside**/**outside**, defualtní hodnota je outside)
-  - **list-style-image** (obrázek místo defaultní značky)
-
-<pen name="YzLWWRg"/>
-
-
----
-hideInToc: true
----
-
-# Stylování seznamů - proč
-
-<pen name="qBKaxrP"/>
-
-Typicky například v hlavičkách chceme používat seznam, ale prvky chceme zobrazit po svém.
 
 ---
 
