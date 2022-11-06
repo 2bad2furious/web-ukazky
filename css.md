@@ -457,6 +457,47 @@ Umíme tvořit pokročilejší webové stránky:
 - Jaktože můžeme dát vertikální padding/margin inputu ale ne spanu?
 
 ---
+title: Display
+---
+
+# [Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+
+Alespoň ty hlavní hodnoty
+
+- **none** (schová element)
+- **block** (nastaví element jako blokový - vyhradí si celý řádek)
+- **inline** (nastaví element jako řádkový - vyhradí si pouze potřebné místo)
+- **inline-block** (kombinace **inline** a **block** - vyhradí si jen potřebné místo, ale:
+  - může mít např. **width** a **height**
+  - a vertikální **margin**/**padding** se chová "normálně"
+  - z toho důvodu většinou používáme pro možnost nastavení těchto vlastností na **defaultně inline** prvcích)
+- **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)<sup>(1)</sup>
+- **grid** (skládání vnitřních prvků do virtuální tabulky)<sup>(1)</sup>
+- další jako table-cell, table-row, table<sup>(1)</sup>
+
+<div class="flex-grow"></div>
+<footer>
+<sup>(1)</sup> Tyto zatím řešit nebudeme.
+</footer>
+
+---
+hideInToc: true
+---
+
+# Display
+
+none vs inline vs block vs inline-block
+
+<pen name="WNzjjJW" />
+
+---
+
+# Vertikální zarovnání inline-block prvků
+Můžeme použít vertical-align.
+
+<pen name="vYjoLNX" />
+
+---
 hideInToc: true
 clicks: 3
 ---
@@ -488,47 +529,6 @@ hideInToc: true
 
 <pen name="YzLWWRg"/>
 
-
----
-title: Display
----
-
-# [Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
-
-Alespoň ty hlavní hodnoty
-
-- **none** (schová element)
-- **block** (nastaví element jako blokový - vyhradí si celý řádek)
-- **inline** (nastaví element jako řádkový - vyhradí si pouze potřebné místo)
-- **inline-block** (kombinace **inline** a **block** - vyhradí si jen potřebné místo, ale:
-  - může mít např. **width** a **height**
-  - a vertikální **margin**/**padding** se chová "normálně"
-  - z toho důvodu většinou používáme pro možnost nastavení těchto vlastností na **defaultně inline** prvcích)
-- **flex** (skládání vnitřních prvků za sebe s možností je roztahovat, posouvat, atd.)<sup>(1)</sup>
-- **grid** (skládání vnitřních prvků do virtuální tabulky)<sup>(1)</sup>
-- další jako table-cell, table-row, table<sup>(1)</sup>
-
-<div class="flex-grow"></div>
-<footer>
-<sup>(1)</sup> místo adresy v <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/url"><strong>url</strong></a> lze používat i spoustu jiných hodnot
-</footer>
-
----
-hideInToc: true
----
-
-# Display
-
-none vs inline vs block vs inline-block
-
-<pen name="WNzjjJW" />
-
----
-
-# Vertikální zarovnání inline-block prvků
-Můžeme použít vertical-align.
-
-<pen name="vYjoLNX" />
 
 ---
 
