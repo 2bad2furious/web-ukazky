@@ -523,22 +523,28 @@ Můžeme použít vertical-align.
 
 ---
 hideInToc: true
-clicks: 3
+clicks: 4
 ---
 
 # [Vertikální zarovnání](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
 
-**inline** prvků a v buňkách tabulky.
+**inline/inline-block** prvků a v buňkách tabulky.
 
 - **middle**, **top**, **bottom**, **sub**, **sup**
 - **baseline** (default, zarovná na spodní hranu textu okolo)
 
-Příklady: <click-links :to="[[0, 'baseline'], [1, 'sub'], [2, 'middle'], [3, 'top']]" class="mb-2 mt-3" />
+<p>
+Příklady: <click-links :to="[[0, 'baseline'], [1, 'sub'], [2, 'middle'], [3, 'top'], [4, 'bottom']]" class="mt-2" />
+<span class="ml-3 text-gray-100 text-sm align-middle">(Zkuste odkomentovat nastavení display a padding.)</span>
+</p>
 
 <pen name="jOxgWwe" v-show-on="0" />
 <pen name="QWreaVJ" v-show-on="1" />
 <pen name="LYmwegb" v-show-on="2" />
 <pen name="GRdVyYy" v-show-on="3" />
+<pen name="OJEZWeJ" v-show-on="4" />
+
+
 
 ---
 
