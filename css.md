@@ -435,7 +435,7 @@ Menší block v blocku.
 Můžeme použít **margin auto** na **obě strany**, ale musíme mít **pevně nastavenou šířku**.
 
 ---
-title: Tabulky a seznmy
+title: Tabulky a seznamy
 ---
 
 # Stylování tabulek
