@@ -557,7 +557,9 @@ Příklady: <click-links :to="[[0, 'baseline'], [1, 'sub'], [2, 'middle'], [3, '
     - **background-size** (velikost pozadí, např. **contain**, **cover**, **50%** nebo **200px**)
     - **background-position** (pozice pozadí)
 
+
 <div class="flex-grow"></div>
+Pozadí nijak neroztáhne prvek. Pokud tedy nemá výšku/šířku, nic vidět nebude.
 <footer>
 <sup>(1)</sup> místo adresy v <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/url"><strong>url</strong></a> lze používat i spoustu jiných hodnot
 </footer>
@@ -578,9 +580,9 @@ title: Position
 
 - **static** (defaultní hodnota)
 - **relative** (umožňuje element posunout relativně k jeho původní pozici)
-- **fixed** (umožňuje element pozicovat absolutně v okně)
-- **sticky** (umožňuje elementu zůstat viditelný co nejdéle to jde)
-- **absolute** (umožňuje element pozicovat absolutně v jeho *containing-block*)
+- **fixed** (umožňuje element pozicovat vůči oknu, nezabírá místo)
+- **absolute** (umožňuje element pozicovat absolutně v jeho *containing-block*, nezabírá místo)
+- **sticky** (umožňuje elementu zůstat viditelný co nejdéle, ukážeme si později)
   - [*containing-block*](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) je buď **body** nebo
     nejbližší předek s pozicí jinou než **static**
 - vlastností **z-index** nastavíme, který element překrývá který (vyšší hodnota překrývá nižší)
