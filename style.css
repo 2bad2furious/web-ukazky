@@ -7,3 +7,8 @@ ul {
     flex-direction: column;
     height: 100%;
 }
+
+.slidev-toc-item p{
+    margin-top: 0;
+    margin-bottom: .5rem;
+}

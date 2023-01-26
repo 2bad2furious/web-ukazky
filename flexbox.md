@@ -27,7 +27,8 @@ hideInToc: true
 <Toc columns="1" maxDepth="1" listClass="underline" />
 
 ---
-
+title: Motivace
+---
 
 # Display inline-block je trochu otravný
 A taky toho spoustu neumí (viz dále)
@@ -83,14 +84,14 @@ layout: center
 layout: center
 ---
 
-# Základní vlastnosti containeru
+# Vlastnosti containeru
 
 ---
-title: Justify content
+title: justify-content
 clicks: 4
 ---
 
-# Containeru - primární osa: [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
+## Container - primární osa: [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
 
 <p>
 Možné hodnoty: <click-links :to="[[0, 'flex-start'], [1, 'flex-end'], [2, 'center'], [3, 'space-between'], [4, 'space-around']]" class="mt-2" />
@@ -120,36 +121,60 @@ Vloží místo mezi prvky i vedle krajních.
 title: align-items
 ---
 
-# Containeru - sekundární osa: [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
+## Container - sekundární osa: [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
 
 ---
 title: align-content
 ---
 
-# Containeru - sekundární osa: [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
+## Container - sekundární osa: [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
 
 ---
 title: gap
 ---
 
-# Container - gap
+## Container - gap
 
 - gap
 - column-gap
 - row-gap
 
 ---
+title: flex-direction, wrap
+---
 
-# Nastavení os a přetékání
+## Nastavení os a přetékání
 
 - flex-direction
 - wrap
 
 ---
+layout: center
+---
 
+# Vlastnosti containeru
 
-# Vlastnosti itemu
+---
+title: basis, shrink, grow
+---
+
+## Nastavení velikost itemu
 
 - flex-basis, shrink, grow
-- order
+
+---
+title: align-self
+---
+
+## Zarovnání itemu na sekundární ose
+
 - align-self
+
+---
+title: order
+---
+
+## Změna pořadí prvků
+Hodí se např. při jiných velikostech zařízení
+
+- order
