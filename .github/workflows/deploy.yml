@@ -18,8 +18,6 @@ jobs:
         run: npm run build:html
       - name: Build CSS
         run: npm run build:css
-      - name: Build JS
-        run: npm run build:js
       - name: Build Responsivity
         run: npm run build:responsivity
       - name: Build Flexbox
