@@ -545,7 +545,6 @@ Příklady: <click-links :to="[[0, 'baseline'], [1, 'sub'], [2, 'middle'], [3, '
 <pen name="OJEZWeJ" v-show-on="4" />
 
 
-
 ---
 
 # Pozadí 2
