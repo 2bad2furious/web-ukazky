@@ -1,8 +1,12 @@
 name: Deploy pages
 on: push
+env:
+  ACTIONS_RUNNER_DEBUG: true
+  ACTIONS_STEP_DEBUG: true
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -12,8 +16,6 @@ jobs:
         run: npm install
       - name: Install slidev
         run: npm i -g @slidev/cli
-      - name: Build Zkratky
-        run: npm run build:zkratky
       - name: Build HTML
         run: npm run build:html
       - name: Deploy pages
