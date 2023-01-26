@@ -1,8 +1,5 @@
 name: Deploy pages
 on: push
-env:
-  ACTIONS_RUNNER_DEBUG: true
-  ACTIONS_STEP_DEBUG: true
 jobs:
   deploy:
     runs-on: ubuntu-latest
