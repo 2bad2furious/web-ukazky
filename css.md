@@ -581,9 +581,9 @@ title: Position
 - **relative** (umožňuje element posunout relativně k jeho původní pozici)
 - **fixed** (umožňuje element pozicovat vůči oknu, nezabírá místo)
 - **absolute** (umožňuje element pozicovat absolutně v jeho *containing-block*, nezabírá místo)
-- **sticky** (umožňuje elementu zůstat viditelný co nejdéle, ukážeme si později)
   - [*containing-block*](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) je buď **body** nebo
     nejbližší předek s pozicí jinou než **static**
+- **sticky** (umožňuje elementu zůstat viditelný co nejdéle, ukážeme si později)
 - vlastností **z-index** nastavíme, který element překrývá který (vyšší hodnota překrývá nižší)
 
 <pen name="qBomjxM" />
