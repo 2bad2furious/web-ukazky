@@ -30,8 +30,8 @@ hideInToc: true
 title: Motivace
 ---
 
-# Display inline-block je trochu otravný
-A taky toho spoustu neumí (viz dále)
+# Display inline-block je takové polořešení layoutů
+Kromě otravného whitespacu toho taky spoustu neumí (viz dále).
 
 <pen name="dyjeZLo" default-lang="html,result"/>
 
@@ -73,11 +73,12 @@ layout: center
 
 # Základní info
 
+- Po primární ose se skládají **items** (potomci **containeru**)
+- Primární osa je defaultně ta horizontální
+- Sekundární osa je defaultně ta vertikální
 - Flexbox zapneme nastavením **display: flex** na **container**
 - _Ignoruje_ nastavení **display** na **items**
   - nemusíme tedy na prvky používat **display: inline-block**, aby byly vedle sebe
-- Primární osa je defaultně ta horizontální
-- Sekundární osa je defaultně ta vertikální
 - Nastavení os můžeme změnit (viz dále)
 
 ---
@@ -152,7 +153,7 @@ title: flex-direction, wrap
 layout: center
 ---
 
-# Vlastnosti containeru
+# Vlastnosti itemu
 
 ---
 title: basis, shrink, grow
