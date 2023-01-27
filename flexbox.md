@@ -31,6 +31,7 @@ title: Motivace
 ---
 
 # Display inline-block je takové polořešení layoutů
+
 Kromě otravného whitespacu toho taky spoustu neumí (viz dále).
 
 <pen name="dyjeZLo" default-lang="html,result"/>
@@ -40,6 +41,7 @@ title: Řešení
 ---
 
 # Řešení: [Flexbox](https://developer.mozilla.org/en-US/docs/Glossary/Flexbox)
+
 Chci mezi nimi prostor, duh
 
 <pen name="YzjLEoq"/>
@@ -59,7 +61,6 @@ Zdroj: [Complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-t
 
 # Základní koncept - osy
 
-
 <img class="w-3/4 mx-auto" src="https://res.cloudinary.com/practicaldev/image/fetch/s---3gDSFf1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/fsln7je4ax7ft3er28hh.png"/>
 
 <div class="flex-grow"/>
@@ -78,7 +79,7 @@ layout: center
 - Sekundární osa je defaultně ta vertikální
 - Flexbox zapneme nastavením **display: flex** na **container**
 - _Ignoruje_ nastavení **display** na **items**
-  - nemusíme tedy na prvky používat **display: inline-block**, aby byly vedle sebe
+    - nemusíme tedy na prvky používat **display: inline-block**, aby byly vedle sebe
 - Nastavení os můžeme změnit (viz dále)
 
 ---
@@ -120,9 +121,31 @@ Vloží místo mezi prvky i vedle krajních.
 
 ---
 title: align-items
+clicks: 3
 ---
 
 ## Container - sekundární osa: [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
+
+<p>
+Možné hodnoty: <click-links :to="[[0, 'start'], [1, 'end'], [2, 'center'], [3, 'stretch']]" class="mt-2" />
+</p>
+
+<div v-show-on="0">
+Zobrazí na začátku, v defaultním nastavení os to je nahoře
+<pen name="abjKmxN"  class="mt-1" />
+</div>
+<div v-show-on="1">
+Zobrazí se na konci, v defaultním nastavení os to je dole
+<pen name="QWBxKPY"  class="mt-1" />
+</div>
+<div v-show-on="2">
+Zobrazí se uprostřed
+<pen name="RwBJGmj"  class="mt-1" />
+</div>
+<div v-show-on="3">
+Roztáhne prvky (defaultní ve flexboxu)
+<pen name="jOpKMoJ" class="mt-1" /></div>
+
 
 ---
 title: align-content
@@ -176,6 +199,7 @@ title: order
 ---
 
 ## Změna pořadí prvků
+
 Hodí se např. při jiných velikostech zařízení
 
 - order
