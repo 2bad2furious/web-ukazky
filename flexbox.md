@@ -90,34 +90,37 @@ layout: center
 
 ---
 title: justify-content
-clicks: 4
+clicks: 5
 ---
 
 ## Container - primární osa: [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
 
 <p>
-Možné hodnoty: <click-links :to="[[0, 'flex-start'], [1, 'flex-end'], [2, 'center'], [3, 'space-between'], [4, 'space-around']]" class="mt-2" />
+Možné hodnoty: <click-links :to="[[0, 'flex-start'], [1, 'flex-end'], [2, 'center'], [3, 'space-between'], [4, 'space-around'], [5, 'space-evenly']]" class="mt-2" />
 </p>
 
 <div v-show-on="0">
 Zobrazí na začátku, v defaultním nastavení os to je vlevo
-<pen name="ExpLoGK" class="mt-1" />
+<pen name="ExpLoGK" class="my-1" />
 </div>
 <div v-show-on="1">
 Zobrazí se na konci, v defaultním nastavení os to je vpravo
-<pen name="vYajdER" v-show-on="1" class="mt-1" />
+<pen name="vYajdER" class="my-1" />
 </div>
 <div v-show-on="2">
 Zobrazí se uprostřed
-<pen name="QWBrQwX" v-show-on="2" class="mt-1" />
+<pen name="QWBrQwX"  class="my-1" />
 </div>
 <div v-show-on="3">
 Mezi prvky vloží stejné místo (rovnoměrně rozdělí volný prostor)
-<pen name="ZEjorGQ" v-show-on="3" class="mt-1" /></div>
+<pen name="ZEjorGQ"  class="my-1" /></div>
 <div v-show-on="4">
-Vloží místo mezi prvky i vedle krajních. 
-<pen name="qByYxdX" v-show-on="4" class="mt-1" /></div>
-
+Vloží místo mezi prvky i vedle krajních. Místo vedle krajních je poloviční. 
+<pen name="qByYxdX" class="my-1" /></div>
+<div v-show-on="5">
+Vloží <b>stejné</b> místo mezi prvky i vedle krajních. 
+<pen name="XWBBgEV" class="my-1" /></div>
+Existují i hodnoty start a end, které se chovají stejně i bez prefixu, ale jsou méně podporované.
 
 ---
 title: align-items
@@ -127,7 +130,7 @@ clicks: 3
 ## Container - sekundární osa: [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
 
 <p>
-Možné hodnoty: <click-links :to="[[0, 'start'], [1, 'end'], [2, 'center'], [3, 'stretch']]" class="mt-2" />
+Možné hodnoty: <click-links :to="[[0, 'flex-start'], [1, 'flex-end'], [2, 'center'], [3, 'stretch']]" class="mt-2" />
 </p>
 
 <div v-show-on="0">
@@ -145,13 +148,7 @@ Zobrazí se uprostřed
 <div v-show-on="3">
 Roztáhne prvky (defaultní ve flexboxu)
 <pen name="jOpKMoJ" class="mt-1" /></div>
-
-
----
-title: align-content
----
-
-## Container - sekundární osa: [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
+Existují i hodnoty start a end, které se chovají stejně i bez prefixu, ale jsou méně podporované.
 
 ---
 title: gap
@@ -172,6 +169,43 @@ title: flex-direction, wrap
 - flex-direction
 - wrap
 
+---
+title: align-content
+clicks: 6
+---
+
+## Container - hýbání lajnami po sekundární ose: [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
+
+<p>
+Možné hodnoty: <click-links :to="[[0, 'flex-start'], [1, 'flex-end'], [2, 'center'], [3, 'stretch'], [4, 'justify-content'], [5, 'space-around'], [6, 'space-evenly']]" class="mt-2" />
+</p>
+
+<div v-show-on="0">
+Zobrazí na začátku, v defaultním nastavení os to je nahoře
+<pen name="PoBBjxq"  class="mt-1" />
+</div>
+<div v-show-on="1">
+Zobrazí se na konci, v defaultním nastavení os to je dole
+<pen name="bGjjROe"  class="mt-1" />
+</div>
+<div v-show-on="2">
+Zobrazí se uprostřed
+<pen name="LYBBLaq"  class="mt-1" />
+</div>
+<div v-show-on="3">
+Roztáhne řádky (defaultní ve flexboxu)
+<pen name="NWBBgmb" class="mt-1" /></div>
+<div v-show-on="4">
+Mezi prvky vloží stejné místo (rovnoměrně rozdělí volný prostor).
+<pen name="abjjwrR" class="mt-1" /></div>
+<div v-show-on="5">
+Vloží <b>stejné</b> místo mezi prvky i vedle krajních. 
+<pen name="qByyjzg" class="mt-1" /></div>
+<div v-show-on="6">
+Existují i hodnoty start a end, které se chovají stejně i bez prefixu, ale jsou méně podporované.
+<pen name="RwBBgXw" class="mt-1" /></div>
+
+Existují i hodnoty start a end, které se chovají stejně i bez prefixu, ale jsou méně podporované.
 ---
 layout: center
 ---
