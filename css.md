@@ -674,8 +674,8 @@ Také existují [radial-gradienty](https://developer.mozilla.org/en-US/docs/Web/
 
 - **cursor** (změní styl kurzoru po dobu najetí na element)
 - **opacity** (změní průhlednost elementu)
-- **box-shadow** (nastaví stín elementu, hodnoty jsou složitější, častou
-  používáme [generátory](https://www.cssmatic.com/box-shadow))
+- **box-shadow** (nastaví stín elementu, hodnoty jsou složitější, často používáme [generátory](https://www.cssmatic.com/box-shadow))
+- **outline** (nastaví "border", který ale nezabírá místo)
 - **transform** (umožňuje měnit zobrazení, např. zvětšení, rotace, posunutí podobně jako **display:absolute**)
 - **visibility** (umožňuje schovat element, ale stále bude na stránce, klikatelný, atd. **hidden**/**visible**)
 
