@@ -151,23 +151,54 @@ Roztáhne prvky (defaultní ve flexboxu)
 Existují i hodnoty start a end, které se chovají stejně i bez prefixu, ale jsou méně podporované.
 
 ---
+title: flex-wrap
+---
+
+## Přetékání itemů z kontejneru - [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
+
+<pen name="jOpKMoJ" class="mt-1" />
+
+---
+title: flex-direction
+---
+
+## Změna nastavení os - [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
+
+<pen name="jOpKMoJ" class="mt-1" />
+
+---
+hideInToc: true
+---
+
+## [TODO] Mezery v layoutu pomocí inline-block
+
+<pen name="jOpKMoJ" class="mt-1" />
+
+---
 title: gap
 ---
 
 ## Container - gap
 
-- gap
-- column-gap
-- row-gap
+- **row-gap** nastavuje mezery mezi prvky, které jsou vertikálně za sebou
+- **column-gap** nastavuje mezery mezi prvky, které jsou horizontálně za sebou
+- **gap** - můžme nastavit obě vlastnosti najednou (stejnou hodnotu pro obě nebo 2 různé)
+
+<pen name="abc"/>
 
 ---
-title: flex-direction, wrap
+title: row-gap
+hideInToc: true
 ---
 
-## Nastavení os a přetékání
+### Container - row-gap
 
-- flex-direction
-- wrap
+---
+title: column-gap
+hideInToc: true
+---
+
+### Container - column-gap
 
 ---
 title: align-content
