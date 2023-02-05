@@ -80,6 +80,7 @@ layout: center
 - Flexbox zapneme nastavením **display: flex** na **container**
 - _Ignoruje_ nastavení **display** na **items**
     - nemusíme tedy na prvky používat **display: inline-block**, aby byly vedle sebe
+    - ale můžeme mít např. **display: flex** v itemu a tím zapnout flexbox i uvnitř
 - Nastavení os můžeme změnit (viz dále)
 
 ---
@@ -102,10 +103,12 @@ Možné hodnoty: <click-links :to="[[0, 'flex-start'], [1, 'flex-end'], [2, 'cen
 <div v-show-on="0">
 Zobrazí na začátku, v defaultním nastavení os to je vlevo
 <pen name="ExpLoGK" class="my-1" />
+Pozor, flex-start a flex-end se chovají jinak než <strong>start</strong> a <strong>end</strong>. Start a end nekoukají na to, zda je směr otočený (viz flex-direction: *-reverse)
 </div>
 <div v-show-on="1">
 Zobrazí se na konci, v defaultním nastavení os to je vpravo
 <pen name="vYajdER" class="my-1" />
+Pozor, flex-start a flex-end se chovají jinak než <strong>start</strong> a <strong>end</strong>. Start a end nekoukají na to, zda je směr otočený (viz flex-direction: *-reverse)
 </div>
 <div v-show-on="2">
 Zobrazí se uprostřed
@@ -120,7 +123,6 @@ Vloží místo mezi prvky i vedle krajních. Místo vedle krajních je polovičn
 <div v-show-on="5">
 Vloží <b>stejné</b> místo mezi prvky i vedle krajních. 
 <pen name="XWBBgEV" class="my-1" /></div>
-Existují i hodnoty start a end, které se chovají stejně i bez prefixu, ale jsou méně podporované.
 
 ---
 title: align-items
@@ -136,10 +138,12 @@ Možné hodnoty: <click-links :to="[[0, 'flex-start'], [1, 'flex-end'], [2, 'cen
 <div v-show-on="0">
 Zobrazí na začátku, v defaultním nastavení os to je nahoře
 <pen name="abjKmxN"  class="mt-1" />
+Existují i hodnoty start a end, které se chovají stejně i bez prefixu, ale jsou méně podporované.
 </div>
 <div v-show-on="1">
 Zobrazí se na konci, v defaultním nastavení os to je dole
 <pen name="QWBxKPY"  class="mt-1" />
+Existují i hodnoty start a end, které se chovají stejně i bez prefixu, ale jsou méně podporované.
 </div>
 <div v-show-on="2">
 Zobrazí se uprostřed
@@ -148,23 +152,60 @@ Zobrazí se uprostřed
 <div v-show-on="3">
 Roztáhne prvky (defaultní ve flexboxu)
 <pen name="jOpKMoJ" class="mt-1" /></div>
-Existují i hodnoty start a end, které se chovají stejně i bez prefixu, ale jsou méně podporované.
+
 
 ---
 title: flex-wrap
+clicks: 2
 ---
 
 ## Přetékání itemů z kontejneru - [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
 
-<pen name="jOpKMoJ" class="mt-1" />
 
+<p>
+Možné hodnoty: <click-links :to="[[0, 'nowrap'], [1, 'wrap'], [2, 'wrap-reverse']]" class="mt-2" />
+</p>
+
+<div v-show-on="0">
+Hodnoty nepřetečou, pokud to jde (defaultní chování)
+<pen name="eYjXvQz"  class="mt-1" />
+</div>
+<div v-show-on="1">
+Hodnoty se začnou rovnat do dalších řádků.
+<pen name="poZYeBj"  class="mt-1" />
+</div>
+<div v-show-on="2">
+Hodnoty se začnou rovnat do dalších řádků před ten původní
+<pen name="ZEjPeZO"  class="mt-1" />
+</div>
 ---
 title: flex-direction
+clicks: 3
 ---
 
 ## Změna nastavení os - [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
 
-<pen name="jOpKMoJ" class="mt-1" />
+
+<p>
+Možné hodnoty: <click-links :to="[[0, 'row'], [1, 'column'], [2, 'row-reverse'], [3, 'column-reverse']]" class="mt-2" />
+</p>
+
+<div v-show-on="0">
+Hodnoty se skládají v řádku (defaultní chování)
+<pen name="abjMWdV"  class="mt-1" />
+</div>
+<div v-show-on="1">
+Hodnoty se skládají do sloupečku
+<pen name="GRBemoe"  class="mt-1" />
+</div>
+<div v-show-on="2">
+Hodnoty se skládají do řádku v opačném pořadí
+<pen name="NWBJjrP"  class="mt-1" />
+</div>
+<div v-show-on="3">
+Hodnoty se skládají do sloupečku v opačném pořadí
+<pen name="PoBLmzr"  class="mt-1" />
+</div>
 
 ---
 hideInToc: true
