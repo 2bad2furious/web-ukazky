@@ -588,8 +588,6 @@ title: Position
 
 <pen name="qBomjxM" />
 
-<!-- TODO sticky description -->
-
 ---
 hideInToc: true
 ---
@@ -605,6 +603,32 @@ hideInToc: true
 # Position: sticky
 
 <pen name="ZEMOPee"/>
+
+---
+title: Gradienty
+---
+
+# [Linear gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient)
+
+Také existují [radial-gradienty](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient).
+
+- používáme místo obrázků, nejčastěji na **pozadí**
+- definujeme seznam barev, případně v jaké části má k přechodu dojít
+- lze nastavit i rotace gradientu
+- často využíváme generátorů
+
+<pen name="GRdWddw" />
+
+---
+
+# Další vlastnosti
+
+- **cursor** (změní styl kurzoru po dobu najetí na element)
+- **opacity** (změní průhlednost elementu)
+- **box-shadow** (nastaví stín elementu, hodnoty jsou složitější, často používáme [generátory](https://www.cssmatic.com/box-shadow))
+- **outline** (nastaví "border", který ale nezabírá místo)
+- **transform** (umožňuje měnit zobrazení, např. zvětšení, rotace, posunutí podobně jako **display:absolute**)
+- **visibility** (umožňuje schovat element, ale stále bude na stránce, klikatelný, atd. **hidden**/**visible**)
 
 ---
 
@@ -660,32 +684,6 @@ hideInToc: true
 # Animace
 
 <pen name="LYmWJwr"/>
-
----
-title: Gradienty
----
-
-# [Linear gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient)
-
-Také existují [radial-gradienty](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient).
-
-- používáme místo obrázků, nejčastěji na **pozadí**
-- definujeme seznam barev, případně v jaké části má k přechodu dojít
-- lze nastavit i rotace gradientu
-- často využíváme generátorů
-
-<pen name="GRdWddw" />
-
----
-
-# Další vlastnosti
-
-- **cursor** (změní styl kurzoru po dobu najetí na element)
-- **opacity** (změní průhlednost elementu)
-- **box-shadow** (nastaví stín elementu, hodnoty jsou složitější, často používáme [generátory](https://www.cssmatic.com/box-shadow))
-- **outline** (nastaví "border", který ale nezabírá místo)
-- **transform** (umožňuje měnit zobrazení, např. zvětšení, rotace, posunutí podobně jako **display:absolute**)
-- **visibility** (umožňuje schovat element, ale stále bude na stránce, klikatelný, atd. **hidden**/**visible**)
 
 ---
 hideInToc: true

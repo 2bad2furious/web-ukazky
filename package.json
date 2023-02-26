@@ -25,6 +25,7 @@
     "@slidev/theme-bricks": "^0.0.2",
     "@slidev/theme-default": "^0.21.2",
     "@slidev/theme-seriph": "^0.21.3",
-    "slidev-theme-academic": "^1.1.0"
+    "slidev-theme-academic": "^1.1.1",
+    "slidev-theme-geist": "^0.8.1"
   }
 }

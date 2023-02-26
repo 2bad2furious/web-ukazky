@@ -211,35 +211,50 @@ Hodnoty se skládají do sloupečku v opačném pořadí
 hideInToc: true
 ---
 
-## [TODO] Mezery v layoutu pomocí inline-block
+## Problém s mezerami v display:inline-block
 
 <pen name="jOpKMoJ" class="mt-1" />
 
 ---
 title: gap
+clicks: 1
 ---
 
 ## Container - gap
+Margin vs gap: <click-links :to="[[0, 'margin'], [1, 'gap']]" class="mt-0" />
 
-- **row-gap** nastavuje mezery mezi prvky, které jsou vertikálně za sebou
-- **column-gap** nastavuje mezery mezi prvky, které jsou horizontálně za sebou
-- **gap** - můžme nastavit obě vlastnosti najednou (stejnou hodnotu pro obě nebo 2 různé)
+<div v-show-on="0">
+Nemůžeme kontrolvat, zda je margin jen uvnitř a ne na krajích.
+<pen name="jOvVWdY" class="mt-1"/>
+Marginy ve flexu <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing">nesplývají</a>.
+</div>
 
-<pen name="abc"/>
+<div v-show-on="1">
+Gap se aplikuje pouze mezi prvky. mezeru okolo můžeme nastavit např. paddingem containeru.
+<pen name="QWVGyBM" class="mt-1"/>
+</div>
+
 
 ---
-title: row-gap
+title: row-gap a column-gap
 hideInToc: true
+clicks: 1
 ---
 
-### Container - row-gap
+## Container - row/column-gap
 
----
-title: column-gap
-hideInToc: true
----
+Margin vs gap: <click-links :to="[[0, 'column-gap'], [1, 'row-gap']]" class="mt-0" />
 
-### Container - column-gap
+
+<div v-show-on="0">
+nastavuje mezery mezi prvky, které jsou horizontálně za sebou - tedy mezi sloupečky.
+<pen name="WNgorqX" class="mt-1"/>
+</div>
+
+<div v-show-on="1">
+Nastavuje mezery mezi prvky, které jsou vertikálně za sebou - tedy mezi řádky.
+<pen name="YzOpwMy" class="mt-1"/>
+</div>
 
 ---
 title: align-content

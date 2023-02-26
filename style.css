@@ -14,3 +14,14 @@ ul {
     margin-top: 0;
     margin-bottom: .5rem;
 }
+
+.slidev-layout h3{
+    opacity: unset!important;
+    font-size: unset;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    letter-spacing: normal;
+    font-weight: 700;
+}
