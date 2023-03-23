@@ -377,6 +377,7 @@ hideInToc: true
 # Boxmodel - výška/šířka
 
 - **height**, **min-height**, **max-height** (výška, minimální výška a maximální výška)
+  - většinou není potřeba nastavovat (mimo např. obrázků), jako náhradu můžeme použít např. padding nebo align-items u flexboxu
 - **width**, **min-width**, **max-width** (šírka, minimální šířka a maximální šířka)
     - hodnoty lze nastavovat ve velikostních jednotkách nebo **auto** (prohlížeč vybere hodnotu)
 - **box-sizing**
