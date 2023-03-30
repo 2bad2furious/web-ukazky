@@ -268,7 +268,7 @@ layout: center
 
 ---
 title: basis, shrink, grow
-clicks: 1
+clicks: 2
 ---
 
 ## Nastavení velikost itemu
@@ -278,7 +278,7 @@ clicks: 1
 - **flex-grow** - jak moc by se rád zvětšil (pokud to jde), defaultně 0
 
 <div class="my-1">
-Margin vs gap: <click-links :to="[[0, 'Příklad 1'], [1, 'Příklad 2']]" class="mt-0" />
+Margin vs gap: <click-links :to="[[0, 'Příklad 1'], [1, 'Příklad 2'], [2, 'Full height page']]" class="mt-0" />
 </div>
 
 <div v-show-on="0">
@@ -287,6 +287,10 @@ Margin vs gap: <click-links :to="[[0, 'Příklad 1'], [1, 'Příklad 2']]" class
 
 <div v-show-on="1">
 <pen name="wvEbWpj" class="mt-1"/>
+</div>
+
+<div v-show-on="2">
+<pen name="ExezZBy" class="mt-1"/>
 </div>
 
 
