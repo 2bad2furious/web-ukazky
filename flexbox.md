@@ -268,29 +268,50 @@ layout: center
 
 ---
 title: basis, shrink, grow
+clicks: 1
 ---
 
 ## Nastavení velikost itemu
 
-- flex-basis, shrink, grow
+- [**flex-basis**](https://www.vzhurudolu.cz/prirucka/css-flex-basis) - velikost itemu na primární ose (width, pokud main osa = řádek), má přednost před width/height
+- **flex-shrink** - jak moc je item ochotný se zmenšit (pokud je to nutné), defaultně 1
+- **flex-grow** - jak moc by se rád zvětšil (pokud to jde), defaultně 0
+
+<div class="my-1">
+Margin vs gap: <click-links :to="[[0, 'Příklad 1'], [1, 'Příklad 2']]" class="mt-0" />
+</div>
+
+<div v-show-on="0">
+<pen name="ZEMNOrd" class="mt-1"/>
+</div>
+
+<div v-show-on="1">
+<pen name="wvEbWpj" class="mt-1"/>
+</div>
+
 
 ---
 title: align-self
 ---
 
-## Zarovnání itemu na sekundární ose
+## Item - align-self 
 
-- align-self
+- Zarovnání itemu na sekundární ose.
+- Hodnoty jako u align-items
+
+<pen name="XWPwKYJ" class="mt-1"/>
 
 ---
 title: order
 ---
 
-## Změna pořadí prvků
+## order 
 
-Hodí se např. při jiných velikostech zařízení
+- Nastaví pořadí prvku (defaultně 0)
+- Prvky se řadí podle vzestupně podle nastaveného pořadí
+- Hodí se např. při jiných velikostech zařízení
 
-- order
+<pen name="NWLVrBO" class="mt-1" />
 
 ---
 title: align-content
