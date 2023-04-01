@@ -10,7 +10,7 @@ penDefaultLang: html,result
 hideInToc: true
 ---
 
-# Media Queries a Responsivita
+# Media Queries, Responsivita a Reset.css
 
 ---
 layout: two-cols
@@ -30,8 +30,9 @@ layout:  center
 
 # Proč vůbec ?
 
-- zatím stránky (snad) vypadaly dobře na našem monitoru
-- co ale monitory ostatní? co telefony?
+- zatím stránky (snad) vypadaly dobře na našem monitoru v našem prohlížeči
+- co ale monitory ostatních? co telefony?
+- co ostatní prohlížeče?
 
 ---
 
@@ -89,3 +90,14 @@ title: Obrázky
 - taky se hodí načítat menší obrázky, pokud jsme na menších zařízeních
   - pomocí **background-image** a **media queries**
   - **srcset** atribut na **img**
+
+---
+title: Reset a normalize
+---
+
+# Reset.css a normalize.css
+
+- [reset.css](https://meyerweb.com/eric/tools/css/reset/index.html)
+  - _resetuje_ defaultní styly prohlížečů
+- [normalize.css](https://necolas.github.io/normalize.css/8.0.1/normalize.css)
+  - přináší stejné styly pro všechny prohlížeče
