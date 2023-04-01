@@ -61,6 +61,12 @@ title: Media Queries
 
 ---
 
+# Debugging
+
+![Debugging](https://firefox-source-docs.mozilla.org/_images/rdmdevtools.png)
+
+---
+
 # Breakpointy
 
 - nemá smysl pixelhuntit a fixovat problémy na každé šířce, kde se web rozbije
