@@ -87,4 +87,5 @@ title: Obrázky
 - obrázky ignorují velikost rodiče
   - většinou stačí nastavit **max-width: 100%**, případně **height: auto**
 - taky se hodí načítat menší obrázky, pokud jsme na menších zařízeních
-  - 
+  - pomocí **background-image** a **media queries**
+  - **srcset** atribut na **img**
