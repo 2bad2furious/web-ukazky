@@ -60,6 +60,40 @@ title: Media Queries
 <pen name="KKxjqGG" />
 
 ---
+hideInToc: true
+---
+
+# [Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+
+[Primárně budeme měnit vzhled podle šířky zařízení.](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/width)
+
+Pro konkrétní šířku a širší:
+```css
+@media (min-width: 500px) {
+  div {
+    background: yellow;
+  }
+}
+```
+
+Pro konkrétní šířku a užší:
+```css
+@media (max-width: 800px) {
+  div {
+    border: 1px solid red;
+  }
+}
+```
+
+---
+
+# TLDR - časté praktiky
+
+- Na telefonu zobrazujeme méně než na počítači, využijeme **display: none**
+- Flex direction pro telefon je **column**, pro počítač **row**
+  - upravíme zarovnání
+
+---
 
 # Debugging
 
@@ -74,6 +108,7 @@ title: Media Queries
 - nemá smysl pixelhuntit a fixovat problémy na každé šířce, kde se web rozbije
 - většinou stačí řešit rozložení na několika (2-5) šířkách obrazovky
 - příklad 576px, 768px, 992px, 1200px, 1400px
+  - breakpointy také často nastavujeme v **em** nebo **rem**
 - v prostoru mezi breakpointy nám pak mohou pomoci "containers"
   - zúžení obsahu na menší šířku (např. nižší breakpoint) a vycentrování
 
