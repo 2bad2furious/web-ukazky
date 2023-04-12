@@ -55,13 +55,15 @@ title: Media Queries
 # [Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
 
 - takový if pro styly
-- můžeme mít různé styly podle rozlišení, typu zařízení, atd.
+- můžeme mít různé styly podle rozlišení, typu zařízení, zda preferuje uživatel tmavý režim, atd.
 
 <pen name="KKxjqGG" />
 
 ---
 
 # Debugging
+
+<p class="!mb-0">V dev tools si můžeme vybrat rozlišení (případně zařízení), na kterém chceme stránku prohlížet. Finální řešení je ale nutné zkontrolovat na konkrétních zařízeních.</p>
 
 ![Debugging](https://firefox-source-docs.mozilla.org/_images/rdmdevtools.png)
 
@@ -95,13 +97,15 @@ title: Obrázky
   - většinou stačí nastavit **max-width: 100%**, případně **height: auto**
 - taky se hodí načítat menší obrázky, pokud jsme na menších zařízeních
   - pomocí **background-image** a **media queries**
-  - **srcset** atribut na **img**
+  - [srcset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#srcset) atribut na **img**
 
 ---
 title: Reset a normalize
 ---
 
 # Reset.css a normalize.css
+
+Styly, které můžeme načíst do naší stránky, které ulehčí úpravu stylů napříč prohlížeči
 
 - [reset.css](https://meyerweb.com/eric/tools/css/reset/index.html)
   - _resetuje_ defaultní styly prohlížečů
