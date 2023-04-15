@@ -57,6 +57,7 @@ title: Media Queries
 - takový if pro styly
 - můžeme mít různé styly podle rozlišení, typu zařízení, zda preferuje uživatel tmavý režim, atd.
 
+Otevřete a zavřete kartu s CSS:
 <pen name="KKxjqGG" />
 
 ---
