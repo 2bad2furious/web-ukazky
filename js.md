@@ -3,7 +3,6 @@ class: 'text-center'
 theme: apple-basic
 layout: fact
 routerMode: hash
-record: build
 selectable: true
 
 penDefaultLang: js,result
@@ -44,49 +43,43 @@ title: Intro
 hideInToc: true
 ---
 
-# [Jak ho spustíme v prohlížeči?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#how_do_you_add_javascript_to_your_page)
+# [NodeJS](https://nodejs.org/en) - Jak spustíme JS lokálně?
 
-Nejdříve vytvoříme html soubor se základní strukturou, poté máme více možností:
-
-- [Inline](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#internal_javascript) (vložíme **script** tag na konec hlavičky a do něho píšeme)
-- [Externí soubor](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#external_javascript) (vložíme **script** tag na konec hlavičky, přidejme atribut **src** s cestou k vašemu js souboru)
-
-Funkčnost našeho skriptu si můžeme ověřit:
-
-<pen name="jOzxRdQ"/>
+- Nainstalujeme z [https://nodejs.org/en](https://nodejs.org/en)
+- Pomocí příkazu `node <názevsouboru>` skript spustíme (Ve Webstormu lze klasicky použít ▶️)
 
 
 ---
 hideInToc: true
 ---
 
-# Komentáře a výpis
+# [Proměnné a výpis](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
 
-<pen name="MWVGGvz"/>
-Středníky na konci řádků nejsou povinné 
-
----
-hideInToc: true
----
-
-# [Proměnné](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
-
-- Proměnné jsou pojmenovavé místo v paměti, kam ukládáme hodnotu.
+- Proměnné pojmenováváme jako v Javě (bez pomlček, mezer, nesmí začínat čísly, dodržujeme [camelCase](https://cs.wikipedia.org/wiki/CamelCase))
 - Proměnné deklarujeme pomocí klíčových slovíček **let** nebo **const**, datové typy nepíšeme
   - **let** vytváří měnitelnou proměnnou
   - **const** vytváří neměnitelnou proměnnou
   - **var** je zastaralý způsob s odlišným chováním od jiných jazyků 
 
-<pen name="VwXxxXK"/>
+```js
+let a = "Ahoj";
+a = "čau"; // lze
+a = 5 // také lze, js nemá pevné datové typy pro proměnné 
+console.log(text); // vypíše proměnnou nebo text
+
+const number = 3;
+number = 5; // nelze, const nelze měnit
+```
 
 Deklarace proměnné je její vytvoření, před použitím ji musíme deklarovat, nemůžeme ale deklarovat 2x se stejným názvem.
+Středníky na konci řádků nejsou povinné, ale jsou doporučené.
 
 ---
 hideInToc: true
 ---
 
 # [Datové typy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
-Datové typy v js nezapisujeme a nejsou pro proměnné pevné.
+Datové typy v js nezapisujeme a viděli jsme, že nejsou pro proměnné pevné.
 
 - **String**
   - nemáme chary
@@ -102,9 +95,22 @@ hideInToc: true
 
 # [Práce s hodnotami - operátory](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#arithmetic_operators)
 
-<pen name="qBoYKqm"/>
+- **+** **-** **\*** **/** **%** ...
+- **+=** **+\-** ... 
+- **++** **-\-**
+
+```js
+let a = 3;
+a += 2; // a = 5
+a++ // a = 6
+```
 
 Pozor na tolerantnost k chybám, js nám umožňuje např. dělit string číslem.
+
+```js
+let a = 3 / "pes"; // a = NaN - tzn. Not a Number
+console.log(a) // nic nespadlo
+```
 
 ---
 hideInToc: true
@@ -112,7 +118,16 @@ hideInToc: true
 
 # [Stringy a interpolace](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings)
 
-<pen name="zYWjaPo"/>
+ - Nerozlišujeme mezi znaky a stringy, můžeme používat **""**, **''** a **``** 
+ - Stejně jako v Javě můžeme spojovat stringy s jinými hodnotami pomocí **+**
+
+```js
+let pocetBagru = 3;
+let text1 = "Mám " + pocetBagru + " bagrů";
+// Ve stringách vytvořených pomocí `` můžeme provádět tzv. interpolaci
+let text2 = `Mám ${pocetBagru} bagrů`;
+console.log(text1, text2);
+```
 
 ---
 hideInToc: true
@@ -120,27 +135,29 @@ hideInToc: true
 
 # [Parsování](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
 
-<pen name="JjLvBmx"/>
+```js
+const cisloJakoString = "15.5";
 
-**NaN** je speciální hodnota, která vyjadřuje, že výsledkem operace mělo být číslo, ale z nějakého důvodu nemohlo, jako např. když počítáme s **undefined** nebo právě při nepovedeném **parsování**.
+// Získá celé číslo, datový typ je Number
+const celeCislo = parseInt(cisloJakoString);
+console.log(celeCislo);
+
+// Získá desetinné číslo, datový typ je také Number
+const desetinneCislo = parseFloat(cisloJakoString);
+console.log(desetinneCislo);
+
+const desetinneCislo2 = Number(cisloJakoString);
+console.log(desetinneCislo2);
+```
+
+Při neúspěšném parsování vrací **NaN**. 
 
 ---
 hideInToc: true
 ---
 
-# [Funkcionality jenom na webu](https://developer.mozilla.org/en-US/docs/Web/API/Window#methods)
+# Vstup
 
-<pen name="bGvMjPW" clickToLoad="true" />
-
-V praxi se moc nepoužívají, protože se nedají stylovat, ale nám budou zatím stačit.
-
----
-hideInToc: true
----
-
-# Spouštění js lokálně
-
-- Potřebujeme mít nainstalovaný [node.js](https://nodejs.org/en/download/)
 - S [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) je možné pro vstup použít např. [prompt-sync](https://www.npmjs.com/package/prompt-sync)
 - Procesům můžeme posílat hodnoty pomocí tzv. [argumentů](https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/).
 
@@ -162,7 +179,15 @@ hideInToc: true
 <pen name="zYWjJXx" />
 
 ---
+title: Porovnávací/slučovací parametry a podmínky
+---
+
+# [Porovnávací](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#comparison_operators) a [slučovací operátory](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#logical_operators_and_or_and_not)
+
+
+---
 title: Podmínky
+hideInToc: true
 ---
 
 # [Podmínky](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
@@ -180,11 +205,6 @@ hideInToc: true
 
 <pen name="OJvwqPB"/>
 
----
-hideInToc: true
----
-
-# [Porovnávací](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#comparison_operators) a [slučovací operátory](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#logical_operators_and_or_and_not)
 
 ---
 hideInToc: true
@@ -236,6 +256,33 @@ title: Import/export
 ---
 
 # [Moduly a import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)/[export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
+
+---
+title: Spuštění v prohlížeči
+---
+
+# [Jak ho spustíme v prohlížeči?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#how_do_you_add_javascript_to_your_page)
+
+Nejdříve vytvoříme html soubor se základní strukturou, poté máme více možností:
+
+- [Inline](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#internal_javascript) (vložíme **script** tag na konec hlavičky a do něho píšeme)
+- [Externí soubor](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#external_javascript) (vložíme **script** tag na konec hlavičky, přidejme atribut **src** s cestou k vašemu js souboru)
+  - Pro použití import/export přidat atribut `type="module"`
+
+Funkčnost našeho skriptu si můžeme ověřit:
+
+<pen name="jOzxRdQ"/>
+`document.write()` moc často používat nebudeme, proměnná `document` bude však velmi důležitá
+
+---
+hideInToc: true
+---
+
+# [Funkcionality jenom na webu](https://developer.mozilla.org/en-US/docs/Web/API/Window#methods)
+
+<pen name="bGvMjPW" clickToLoad="true" />
+
+V praxi se moc nepoužívají, protože se nedají stylovat, ale nám budou zatím stačit.
 
 ---
 hideInToc: true
