@@ -10,7 +10,7 @@
     "build:js": "rm -rf docs/js && slidev build js.md -o docs/js --base /web-ukazky/js/",
     "build:dom-and-events": "rm -rf docs/dom-and-events && slidev build dom-and-events.md -o docs/dom-and-events --base /web-ukazky/dom-and-events/",
     "build:zkratky": "rm -rf docs/zkratky && slidev build zkratky.md -o docs/zkratky --base /web-ukazky/zkratky/",
-    "build": "npm run build:html && npm run build:css && npm run build:flexbox && npm run build:responsivity",
+    "build": "npm run build:html && npm run build:css && npm run build:flexbox && npm run build:responsivity && npm run build:zkratky",
     "dev:html": "slidev html.md --open",
     "dev:css": "slidev css.md --open",
     "dev:responsivity": "slidev responsivity.md --open",
